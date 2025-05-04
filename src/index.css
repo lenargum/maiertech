@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  /* Configure theme variables */
+  --font-display: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  /* Design system variables */
+  --primary-1: #00DCBB;
+  --primary-2: #0096ED;
+  --primary-3: #794DE3;
+  --gray: #EBEBEB;
+  --shade-1: #6D6E71;
+  --shade-2: #949699;
+  --shade-3: #E6E7E8;
+
+  --gradient-1: linear-gradient(252.44deg, #0096ED 0%, #00DCBB 100%);
+  --gradient-2: linear-gradient(246.04deg, #20065F 0%, #7D57D9 100%);
+  --gradient-3: linear-gradient(252.44deg, #2B1D56 0%, #0E080A 100%);
+}
+
+@layer base {
+  html,
+  body,
+  #root,
+  main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", 
+      "Helvetica Neue", Arial, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply transition-colors duration-300;
+    line-height: 1.5;
+    min-width: 320px;
+    min-height: 100vh;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root,
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Custom Gradient Styles */
+.primary-gradient-bg {
+  background: var(--gradient-1);
+}
+
+.primary-gradient-text {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-3 {
+  background: var(--gradient-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-primary-1 {
+  color: var(--primary-1, #00DCBB);
+}
+
+.text-primary-2 {
+  color: var(--primary-2, #0096ED);
+}
+
+.text-primary-3 {
+  color: var(--primary-3, #855cf8);
+}
