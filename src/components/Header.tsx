@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from './ui/Button'
+import { Button } from './ui/Button/Button'
+import { HeaderLogo } from './ui/Logo/HeaderLogo'
 
 interface HeaderProps {
   darkMode: boolean
@@ -8,45 +8,30 @@ interface HeaderProps {
 }
 
 const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen)
-  }
-
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <header className="container mx-auto fixed top-0 left-0 right-0 z-10 pt-5">
+      <div className="flex justify-between items-center p-5 pl-8 gap-8 h-20 bg-white/50 border-2 border-[#EDE8FB] backdrop-blur-[10px] rounded-full">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            <div className="flex items-center">
-              <div className="mr-1">
-                <div className="w-8 h-8 primary-gradient-bg rounded-md flex items-center justify-center">
-                  <div className="text-white font-bold">M</div>
-                </div>
-              </div>
-              <div className="ml-1">
-                <span className="font-bold text-lg text-gray-800 dark:text-white">MAIER<span className="text-[#00DCBB]">TECH</span></span>
-              </div>
-            </div>
+            <HeaderLogo />
           </Link>
         </div>
         
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8">
-          <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] text-sm font-medium">
+        <nav className="flex items-center gap-10">
+          <Link to="/" className="h5">
             Über Uns
           </Link>
-          <Link to="/innovationen" className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] text-sm font-medium">
+          <Link to="/innovationen" className="h5">
             Innovationen
           </Link>
-          <Link to="/solutions" className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] text-sm font-medium">
+          <Link to="/solutions" className="h5">
             Solutions
           </Link>
-          <Link to="/energy" className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] text-sm font-medium">
+          <Link to="/energy" className="h5">
             Energy
           </Link>
-          <Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] text-sm font-medium">
+          <Link to="/contact" className="h5">
             Kontakt
           </Link>
         </nav>
@@ -73,61 +58,8 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               Kontakt
             </Button>
           </div>
-          
-          {/* Mobile menu button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
         </div>
       </div>
-      
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 py-4 px-4 shadow-lg">
-          <nav className="flex flex-col space-y-4">
-            <Link 
-              to="/" 
-              className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Über Uns
-            </Link>
-            <Link 
-              to="/innovationen" 
-              className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Innovationen
-            </Link>
-            <Link 
-              to="/solutions" 
-              className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Solutions
-            </Link>
-            <Link 
-              to="/energy"
-              className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Energy
-            </Link>
-            <Link 
-              to="/contact" 
-              className="text-gray-600 dark:text-gray-300 hover:text-[#0096ED] dark:hover:text-[#00DCBB] font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Kontakt
-            </Link>
-          </nav>
-        </div>
-      )}
     </header>
   )
 }

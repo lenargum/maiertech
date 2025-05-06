@@ -4,7 +4,7 @@
 @theme inline {
   /* Configure theme variables */
   --font-display: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
   /* Design system variables */
   --primary-1: #00DCBB;
   --primary-2: #0096ED;
@@ -30,7 +30,7 @@
     padding: 0;
     overflow-x: hidden;
     overscroll-behavior-y: none;
-    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       "Helvetica Neue", Arial, sans-serif;
   }
 
@@ -74,13 +74,32 @@
   }
 }
 
+.drop-shadow-triple-white {
+  filter: drop-shadow(0 5px 40px #FFFFFF) drop-shadow(0 5px 40px #FFFFFF) drop-shadow(0 5px 40px #FFFFFF);
+}
+
 /* Custom Gradient Styles */
-.primary-gradient-bg {
+.bg-gradient {
   background: var(--gradient-1);
 }
 
-.primary-gradient-text {
+.bg-gradient-2 {
+  background: var(--gradient-2);
+}
+
+.bg-gradient-3 {
+  background: var(--gradient-3);
+}
+
+.text-gradient {
   background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-2 {
+  background: var(--gradient-2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -103,4 +122,83 @@
 
 .text-primary-3 {
   color: var(--primary-3, #855cf8);
+}
+
+/* Typography styles based on design system */
+/* Web Headings */
+.h1, h1 {
+  font-size: 4rem; /* 64px */
+  line-height: 115%; /* (prev 110%) to prevent line crop for tall letters ("g") */
+  font-weight: 600;
+}
+
+.h2, h2 {
+  font-size: 3.25rem; /* 52px */
+  line-height: 110%; /* 57.2px */
+  font-weight: 600;
+}
+
+.h3, h3 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 110%; /* 44px */
+  font-weight: 600;
+}
+
+.h4, h4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 120%; /* 28.8px */
+  font-weight: 600;
+}
+
+.h5, h5 {
+  font-size: 1rem; /* 16px */
+  line-height: 140%; /* 22.4px */
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Body text styles */
+.body1, span {
+  font-size: 1rem; /* 16px */
+  line-height: 165%; /* 26.4px */
+  font-weight: 400;
+}
+
+.body2 {
+  font-size: 0.875rem; /* 14px */
+  line-height: 145%; /* 20.3px */
+  font-weight: 400;
+}
+
+/* Mobile responsive typography */
+@media (max-width: 768px) {
+  .h1, h1 {
+    font-size: 3rem; /* 48px */
+    line-height: 110%;
+  }
+  
+  .h2, h2 {
+    font-size: 2.5rem; /* 40px */
+    line-height: 110%;
+  }
+  
+  .h3, h3 {
+    font-size: 2rem; /* 32px */
+    line-height: 110%;
+  }
+
+  .h4, h4 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 120%;
+  }
+
+  .h5, h5 {
+    font-size: 1rem; /* 16px */
+    line-height: 140%;
+  }
+
+  .body1, .body1-span, .body2 {
+    font-size: 1rem; /* 14px */
+    line-height: 165%;
+  }
 }
