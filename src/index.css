@@ -131,85 +131,127 @@
 }
 
 /* Typography styles based on design system */
+
+.text-headline {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 110%;
+  letter-spacing: -2%;
+}
+
 /* Web Headings */
-.h1, h1 {
-  font-size: 4rem; /* 64px */
-  line-height: 115%; /* (prev 110%) to prevent line crop for tall letters ("g") */
+.h1,
+h1 {
+  font-size: 4rem;
+  /* 64px */
+  line-height: 115%;
+  /* (prev 110%) to prevent line crop for tall letters ("g") */
   font-weight: 600;
 }
 
-.h2, h2 {
-  font-size: 3.25rem; /* 52px */
-  line-height: 110%; /* 57.2px */
+.h2,
+h2 {
+  font-size: 3.25rem;
+  /* 52px */
+  line-height: 110%;
+  /* 57.2px */
   font-weight: 600;
 }
 
-.h3, h3 {
-  font-size: 2.5rem; /* 40px */
-  line-height: 114%; /* 46px */
+.h3,
+h3 {
+  font-size: 2.5rem;
+  /* 40px */
+  line-height: 114%;
+  /* 46px */
   font-weight: 600;
 
   overflow: visible;
 }
 
-.h4, h4 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 120%; /* 28.8px */
+.h4,
+h4 {
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 120%;
+  /* 28.8px */
   font-weight: 600;
   letter-spacing: -1%;
 }
 
-.h5, h5 {
-  font-size: 1rem; /* 16px */
-  line-height: 140%; /* 22.4px */
+.h5,
+h5 {
+  font-size: 1rem;
+  /* 16px */
+  line-height: 140%;
+  /* 22.4px */
   font-weight: 600;
   letter-spacing: 0;
 }
 
 /* Body text styles */
-.body1, span {
-  font-size: 1rem; /* 16px */
-  line-height: 165%; /* 26.4px */
+.body1,
+span {
+  font-size: 1rem;
+  /* 16px */
+  line-height: 165%;
+  /* 26.4px */
   font-weight: 400;
   letter-spacing: -2%;
 }
 
 .body2 {
-  font-size: 0.875rem; /* 14px */
-  line-height: 145%; /* 20.3px */
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 145%;
+  /* 20.3px */
   font-weight: 400;
   letter-spacing: -2%;
 }
 
 /* Mobile responsive typography */
 @media (max-width: 768px) {
-  .h1, h1 {
-    font-size: 3rem; /* 48px */
-    line-height: 110%;
-  }
-  
-  .h2, h2 {
-    font-size: 2.5rem; /* 40px */
-    line-height: 110%;
-  }
-  
-  .h3, h3 {
-    font-size: 2rem; /* 32px */
+
+  .h1,
+  h1 {
+    font-size: 3rem;
+    /* 48px */
     line-height: 110%;
   }
 
-  .h4, h4 {
-    font-size: 1.5rem; /* 24px */
+  .h2,
+  h2 {
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 110%;
+  }
+
+  .h3,
+  h3 {
+    font-size: 2rem;
+    /* 32px */
+    line-height: 110%;
+  }
+
+  .h4,
+  h4 {
+    font-size: 1.5rem;
+    /* 24px */
     line-height: 120%;
   }
 
-  .h5, h5 {
-    font-size: 1rem; /* 16px */
+  .h5,
+  h5 {
+    font-size: 1rem;
+    /* 16px */
     line-height: 140%;
   }
 
-  .body1, .body1-span, .body2 {
-    font-size: 1rem; /* 14px */
+  .body1,
+  .body1-span,
+  .body2 {
+    font-size: 1rem;
+    /* 14px */
     line-height: 165%;
   }
 }
