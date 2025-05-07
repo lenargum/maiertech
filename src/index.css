@@ -165,8 +165,8 @@ h1 {
 h2 {
   font-size: 3.25rem;
   /* 52px */
-  line-height: 110%;
-  /* 57.2px */
+  line-height: 115%;
+  /* (prev 110%) to prevent line crop for tall letters ("g") */
   font-weight: 600;
 }
 
