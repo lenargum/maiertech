@@ -8,16 +8,20 @@ interface ButtonProps {
   children: React.ReactNode
   variant?: ButtonVariant
   href?: string
+  title?: string
   className?: string
   onClick?: () => void
+  style?: React.CSSProperties
 }
 
 export const Button = ({
   children,
   variant = 'filled',
   href,
+  title,
   className = '',
   onClick,
+  style,
 }: ButtonProps) => {
   const computedClassName = useMemo(() => {
     return `ui-button h5 ${variant === 'filled' ? 'ui-button-filled' : 'ui-button-outlined'} ${className}`
@@ -31,8 +35,10 @@ export const Button = ({
           href={href} 
           className={computedClassName} 
           onClick={onClick} 
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
+          style={style}
+          title={title}
         >
           {children}
         </a>
@@ -45,6 +51,8 @@ export const Button = ({
         to={href} 
         className={computedClassName} 
         onClick={onClick}
+        style={style}
+        title={title}
       >
         {children}
       </Link>
@@ -56,6 +64,8 @@ export const Button = ({
     <button 
       className={computedClassName} 
       onClick={onClick}
+      style={style}
+      title={title}
     >
       {children}
     </button>

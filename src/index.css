@@ -118,16 +118,28 @@
   background-clip: text;
 }
 
-.text-primary-1 {
-  color: var(--primary-1, #00DCBB);
+.text-primary {
+  color: var(--primary-1);
+}
+
+.bg-primary {
+  background-color: var(--primary-1);
 }
 
 .text-primary-2 {
-  color: var(--primary-2, #0096ED);
+  color: var(--primary-2);
+}
+
+.bg-primary-2 {
+  background-color: var(--primary-2);
 }
 
 .text-primary-3 {
-  color: var(--primary-3, #855cf8);
+  color: var(--primary-3);
+}
+
+.bg-primary-3 {
+  background-color: var(--primary-3);
 }
 
 /* Typography styles based on design system */
