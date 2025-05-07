@@ -55,11 +55,11 @@ const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
           alt={area.title}
           className="w-full h-[360px] overflow-hidden object-cover"
         />
-        <div className="p-9 flex flex-col items-center text-center gap-10">
+        <div className="px-[2.375rem] py-10 flex flex-col items-center text-center gap-5">
           <div className="flex flex-col items-center">
             <h3 className="text-gradient-2 mb-3">{area.title}</h3>
             <h4 className="mb-6">{area.subtitle}</h4>
-            <span>{area.description}</span>
+            <span className="min-h-28">{area.description}</span>
           </div>
 
           <Button href={area.link}>
