@@ -1,6 +1,6 @@
 import { Input } from "./ui/Input"
-import { Button } from "./ui/Button/Button"
-import { CardSpotlight } from "./ui/card-spotlight"
+import { Button } from "./ui/Button"
+import { CardSpotlight } from "./ui/CardSpotlight"
 
 export const ContactSection = () => {
   return (

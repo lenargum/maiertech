@@ -20,6 +20,8 @@
     outline-offset: -2px;
     outline-width: 2px;
     outline-style: solid;
+
+    line-height: 0.75rem;
 }
 
 .ui-button-filled {

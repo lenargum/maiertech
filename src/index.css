@@ -74,8 +74,14 @@
   }
 }
 
+/* Drop Shadow Styles */
+
 .drop-shadow-triple-white {
   filter: drop-shadow(0 5px 40px #FFFFFF) drop-shadow(0 5px 40px #FFFFFF) drop-shadow(0 5px 40px #FFFFFF);
+}
+
+.drop-shadow-double-gray {
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.05)) drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.05));
 }
 
 /* Custom Gradient Styles */
@@ -140,14 +146,17 @@
 
 .h3, h3 {
   font-size: 2.5rem; /* 40px */
-  line-height: 110%; /* 44px */
+  line-height: 114%; /* 46px */
   font-weight: 600;
+
+  overflow: visible;
 }
 
 .h4, h4 {
   font-size: 1.5rem; /* 24px */
   line-height: 120%; /* 28.8px */
   font-weight: 600;
+  letter-spacing: -1%;
 }
 
 .h5, h5 {
