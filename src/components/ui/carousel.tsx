@@ -67,29 +67,35 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col justify-end relative text-center opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[0.313rem] z-10 "
+        className="flex flex-1 flex-col justify-end relative text-center opacity-100 transition-all duration-300 ease-in-out w-[40vmin] h-[40vmin] mx-[0.313rem] z-10"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
           transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
           transformOrigin: "bottom",
+          transform:
+            current !== index
+              ? "scale(0.98) rotateX(8deg)"
+              : "scale(1) rotateX(0deg)",
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full rounded-4xl overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full h-full rounded-4xl outline-3 outline-black/30 -outline-offset-3 overflow-hidden transition-all duration-150 ease-out"
           style={{
             transform:
               current === index
                 ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
                 : "none",
             backdropFilter: "blur(20px)",
+            zIndex: 1
           }}
         >
           <img
             className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
-              opacity: 1,
+              opacity: current === index ? 1 : 0.5,
+              zIndex: -1
             }}
             alt={title}
             src={src}
@@ -98,14 +104,17 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             decoding="sync"
           />
 
-          <div className="absolute inset-0 outline-3 -outline-offset-3 outline-black/30 rounded-[calc(2rem-0.1rem)]" />
+          {/* {current === index && (
+            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+          )} */}
         </div>
 
         <article
-          className={`m-2.5 p-8 outline-3 outline-white/80 rounded-[1.75rem] -outline-offset-3`}
+          className={`m-2.5 p-8 outline-3 outline-white/80 rounded-[1.75rem] transition-opacity duration-1000 ease-in-out -outline-offset-3 ${current === index ? "opacity-100 visible" : "opacity-0 invisible"}`}
           style={{
             background: "linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%)",
             backdropFilter: "blur(10px)",
+            zIndex: 1
           }}
         >
           <h3 className="mb-2">{title}</h3>
@@ -196,11 +205,11 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[calc(70vmin+2.5rem+2rem)] mx-auto"
+      className="relative w-[40vmin] h-[calc(40vmin+2.5rem+2rem)] mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
-        className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
+        className="absolute flex transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
         }}
