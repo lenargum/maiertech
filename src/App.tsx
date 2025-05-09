@@ -20,14 +20,10 @@ function App() {
     }
   }, [darkMode])
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
-
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -39,7 +35,6 @@ function App() {
           </Routes>
           <Footer />
         </main>
-        
       </div>
     </Router>
   )
