@@ -40,7 +40,7 @@ const businessAreas: BusinessAreaProps[] = [
 
 const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
   return (
-    <div className="relative bg-white rounded-4xl border-2 border-[#EDE8FB]">
+    <div className="relative bg-white dark:bg-[#1A1A1A] rounded-4xl border-2 border-[#EDE8FB] dark:border-[#1A1A1A]">
       <GlowingEffect
         borderWidth={2}
         spread={40}

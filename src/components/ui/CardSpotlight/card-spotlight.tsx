@@ -34,14 +34,14 @@ export const CardSpotlight = ({
   return (
     <div
       className={cn(
-        "group/spotlight p-10 rounded-md relative bg-white/10",
+        "group/spotlight p-10 rounded-md relative",
         className
       )}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       {...props}
-      style={{...props.style, backdropFilter: "blur(10px)"}}
+      style={{...props.style}}
     >
       <motion.div
         className={`absolute z-0 -inset-px rounded-md opacity-0 transition duration-300 group-hover/spotlight:opacity-100`}

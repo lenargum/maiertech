@@ -106,12 +106,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         </div>
 
         <article
-          className={`m-2.5 p-8 outline-3 outline-white/80 rounded-[1.75rem] transition-opacity duration-1000 ease-in-out -outline-offset-3 ${current === index ? "opacity-100 visible" : "opacity-0 invisible"}`}
-          style={{
-            background: "linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%)",
-            backdropFilter: "blur(10px)",
-            zIndex: 1
-          }}
+          className={`m-2.5 p-8 outline-3 outline-white/80 dark:outline-white/10 rounded-[1.75rem] transition-opacity duration-1000 ease-in-out -outline-offset-3 bg-gradient-to-b from-white/70 to-white/90 dark:from-black/70 dark:to-black/90 backdrop-blur-[10px] z-[1] ${current === index ? "opacity-100 visible" : "opacity-0 invisible"}`}
         >
           <h3 className="mb-2">{title}</h3>
           <h4 className="text-primary-3">{button}</h4>
@@ -232,7 +227,7 @@ export function Carousel({ slides }: CarouselProps) {
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full cursor-pointer focus:outline-none ${current === index ? 'bg-primary-3' : 'bg-[#E6E7E8]'}`}
+              className={`w-3 h-3 rounded-full cursor-pointer focus:outline-none ${current === index ? 'bg-primary-3' : 'bg-[#E6E7E8] dark:bg-[#2A2A2A]'}`}
               aria-label={`Go to slide ${index + 1}`}
               title={`Go to slide ${index + 1}`}
               onClick={() => setCurrent(index)}

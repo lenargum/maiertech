@@ -2,10 +2,11 @@ import { HeaderLogo } from "@/components/ui/Logo/HeaderLogo";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/Button/Button";
 import { Input } from "./ui/Input";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const Footer = () => {
     return (
-        <footer className="pt-30 flex flex-col gap-8 border-t border-[#E6E7E8] relative" style={{ zIndex: 1 }}>
+        <footer className="pt-30 flex flex-col gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
             <LogomarkBgPattern />
             <div className="container mx-auto flex justify-between items-start">
                 <div className="flex flex-col gap-10">
@@ -46,13 +47,13 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="w-[342px] flex flex-col p-8 rounded-4xl bg-white/10" style={{ backdropFilter: "blur(8px)", boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.05), 0px 40px 60px rgba(0, 0, 0, 0.05)" }}>
+                <div className="w-[342px] flex flex-col p-8 rounded-4xl bg-white/10 dark:bg-black/10 dark:border-1 dark:border-[#1A1A1A]" style={{ backdropFilter: "blur(8px)", boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.05), 0px 40px 60px rgba(0, 0, 0, 0.05)" }}>
                     <h4 className="mb-3 self-center">Kontakt Aufnehmen</h4>
                     <Input className="mb-2.5" placeholder="Ihr e-mail" />
                     <Button variant="filled">Abonnieren</Button>
                 </div>
             </div>
-            <div className="container mx-auto py-5 border-t border-[#E6E7E8] flex justify-between items-center">
+            <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex justify-between items-center">
                 <span className="text-[#949699]">© 2024. MaierTech. Alle Rechte vorbehalten</span>
 
                 <div className="flex gap-10">
@@ -74,6 +75,8 @@ export default Footer;
 
 
 const LogomarkBgPattern = () => {
+    const {darkMode} = useTheme();
+    
     return (
         <div className="absolute inset-0 overflow-hidden" style={{ zIndex: -1 }}>
             <div className="absolute h-[100px] left-0 right-0 top-0" style={{ background: "linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%)" }} />
@@ -95,7 +98,7 @@ const LogomarkBgPattern = () => {
                             fillRule="evenodd"
                             clipRule="evenodd"
                             d="M900.779 -49.0928C899.566 -51.0588 881.252 -82.2205 857.652 -122.377C812.933 -198.469 749.233 -306.856 746.935 -310.105C730.644 -335.717 708.259 -358.019 680.246 -374.498C585.741 -430.155 463.951 -398.654 408.255 -304.215L27.5212 341.698C-28.175 436.136 3.34865 557.841 97.8533 613.498C192.358 669.155 314.148 637.654 369.844 543.215L579.449 187.632C653.027 62.7508 746.869 -23.2827 900.779 -49.0928ZM1662.12 -49.093L1511.98 -304.149C1511.98 -304.149 1511.85 -304.348 1511.79 -304.48C1495.23 -332.474 1471.65 -356.762 1441.65 -374.432C1347.15 -430.089 1225.36 -398.588 1169.66 -304.149L960.057 51.4339C886.479 176.315 792.637 262.348 638.727 288.159C641.726 293.078 663.217 329.67 689.294 374.07C732.324 447.333 787.84 541.857 793.365 550.428C809.591 575.511 831.71 597.35 859.26 613.498C953.765 669.155 1075.55 637.653 1131.25 543.215L1340.86 187.632C1414.43 62.7506 1508.28 -23.2829 1662.19 -49.093H1662.12ZM1478.75 271.089C1550.35 253.898 1628.64 235.101 1742.25 245.076C1842.12 255.532 1920 339.911 1920 442.49C1920 552.083 1831.06 640.962 1721.39 640.962C1648.54 640.962 1584.9 601.718 1550.33 543.281C1550.26 543.281 1550.19 543.149 1550.19 543.149L1399.86 288.092C1426.22 283.703 1452.02 277.508 1478.75 271.089Z"
-                            fill="white"
+                            fill={darkMode ? "black" : "white"}
                         />
                     </g>
                     <path
@@ -132,7 +135,7 @@ const LogomarkBgPattern = () => {
                         <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
                         <feColorMatrix
                             type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
+                            values={darkMode ? "0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"}
                         />
                         <feBlend
                             mode="normal"
@@ -148,8 +151,8 @@ const LogomarkBgPattern = () => {
                         y2={641}
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop offset="0.4" stopColor="#E6E7E8" />
-                        <stop offset="0.8" stopColor="white" />
+                        <stop offset="0.4" stopColor={darkMode ? "#1E1E1E" : "#E6E7E8"} />
+                        <stop offset="0.8" stopColor={darkMode ? "black" : "white"} />
                     </linearGradient>
                     <clipPath id="clip0_1925_4959">
                         <rect
