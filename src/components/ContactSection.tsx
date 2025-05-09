@@ -37,7 +37,7 @@ export const ContactSection = () => {
                 <Input
                   type="text"
                   placeholder="Ihr Name"
-                  className="drop-shadow-triple-white"
+                  className="drop-shadow-triple-white mb-1"
                 />
                 <Input
                   type="email"
@@ -95,7 +95,7 @@ export const ContactSection = () => {
 
 const ContactSectionBgPattern: React.FC<{ style?: React.CSSProperties }> = ({ style }) => {
   return (
-    <div className="absolute top-[15%] right-0 bottom-0 left-0" style={style}>
+    <div className="absolute top-[15%] right-0 bottom-0 left-0 overflow-hidden" style={style}>
       <svg
         viewBox="0 0 1920 800"
         fill="none"

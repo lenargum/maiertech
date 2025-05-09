@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage'
 import InnovationPage from './pages/InnovationPage'
 import SolutionsPage from './pages/SolutionsPage'
 import EnergyPage from './pages/EnergyPage'
+import Footer from './components/Footer'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -36,7 +37,9 @@ function App() {
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/energy" element={<EnergyPage />} />
           </Routes>
+          <Footer />
         </main>
+        
       </div>
     </Router>
   )
