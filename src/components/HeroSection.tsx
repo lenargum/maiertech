@@ -1,8 +1,11 @@
-import { Button } from "./ui/Button/Button"
+import { Button } from "@/components/ui/Button/Button"
 import heroImage from "@/assets/hero/hero.png"
+import { Spotlight } from "@/components/ui/spotlight"
+
 export const HeroSection = () => {
   return (
     <section className="py-16 pt-48 pb-10" style={{ backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 72%,  rgba(255, 255, 255, 1) 100%), url(${heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <Spotlight />
       <div className="container mx-auto flex flex-col gap-20 drop-shadow-triple-white">
         <div className="text-center flex flex-col gap-8 items-center justify-center">
           <h1 className="text-gradient">
@@ -13,6 +16,7 @@ export const HeroSection = () => {
           <span className="text-black">
             Intelligente Energie erfordert smarte Lösungen. MaierTech verbindet modernste Technologie<br /> mit innovativen Ansätzen, um eine nachhaltige, vernetzte und effiziente Energiewelt zu <br />gestalten. Dank unserer engen Partnerschaft mit AE Solar setzen wir auf modernste <br /> Solartechnologie und skalieren Projekte weltweit.
           </span>
+
           <div className="flex flex-wrap justify-center items-center gap-2.5">
             <Button href="/contact" variant="filled">
               Solutions

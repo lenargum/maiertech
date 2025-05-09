@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Button } from './ui/Button/Button'
 import { HeaderLogo } from './ui/Logo/HeaderLogo'
+import { HoverBorderGradient } from './ui/hover-border-gradient'
 
 interface HeaderProps {
   darkMode: boolean
@@ -10,7 +11,7 @@ interface HeaderProps {
 const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
   return (
     <header className="container mx-auto fixed top-0 left-0 right-0 z-10 pt-5">
-      <div className="flex justify-between items-center p-5 pl-8 gap-8 h-20 bg-white/50 border-2 border-[#EDE8FB] backdrop-blur-[10px] rounded-full">
+      <HoverBorderGradient containerClassName="rounded-full" className="flex justify-between items-center gap-8 p-5 pl-8 border-2 border-[#EDE8FB] h-20 bg-white/50 backdrop-blur-[10px]">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <HeaderLogo />
@@ -59,7 +60,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
             </Button>
           </div>
         </div>
-      </div>
+      </HoverBorderGradient>
     </header>
   )
 }
