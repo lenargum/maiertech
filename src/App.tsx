@@ -13,19 +13,20 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen flex flex-col text-black dark:text-white bg-white dark:bg-black">
-          <Header />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/innovationen" element={<InnovationPage />} />
-              <Route path="/solutions" element={<SolutionsPage />} />
-              <Route path="/energy" element={<EnergyPage />} />
-            </Routes>
-            <Footer />
-          </main>
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/innovationen" element={<InnovationPage />} />
+            <Route path="/solutions" element={<SolutionsPage />} />
+            <Route path="/energy" element={<EnergyPage />} />
+          </Routes>
+          <Footer />
+        </main>
+        <div className="flex flex-col ">
+
         </div>
       </Router>
     </ThemeProvider>

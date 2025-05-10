@@ -22,37 +22,28 @@
 }
 
 @layer base {
-  html,
-  body,
-  #root,
-  main {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overscroll-behavior-y: none;
-    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      "Helvetica Neue", Arial, sans-serif;
-  }
-
   html {
+    height: 100%;
     scroll-behavior: smooth;
+    @apply text-black dark:text-white bg-white dark:bg-black;
   }
 
   body {
-    @apply transition-colors duration-300;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     line-height: 1.5;
-    min-width: 320px;
-    min-height: 100vh;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @apply transition-colors duration-300;
   }
 
-  #root,
-  main {
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
   }
