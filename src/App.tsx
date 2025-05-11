@@ -14,20 +14,15 @@ function App() {
     <ThemeProvider>
       <Router>
         <Header />
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/innovationen" element={<InnovationPage />} />
-            <Route path="/solutions" element={<SolutionsPage />} />
-            <Route path="/energy" element={<EnergyPage />} />
-          </Routes>
-          <Footer />
-        </main>
-        <div className="flex flex-col ">
-
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/innovationen" element={<InnovationPage />} />
+          <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/energy" element={<EnergyPage />} />
+        </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   )

@@ -19,13 +19,13 @@ import { useTheme } from "@/contexts/ThemeContext"
 
 
 
-const StatsGridItem = ({ value, description, style }: { value: string, description: string, style?: React.CSSProperties }) => {
+const StatsGridItem = ({ value, description, style, className }: { value: string, description: string, style?: React.CSSProperties, className?: string }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1 }}
-      className="py-20 text-center flex flex-col items-center justify-center"
+      className={`py-20 text-center flex flex-col items-center justify-center ${className}`}
       style={style}
     >
       <span className="text-headline text-gradient">{value}</span>
@@ -127,10 +127,8 @@ export const PartnershipsSection = () => {
             borderImageSlice: 1
           }}>
             <StatsGridItem value="22+" description="Jahre Erfahrung in der Solarbranche" />
-            <StatsGridItem value="50+" description="Technologie & EPC-Partner Weltweit"
+            <StatsGridItem value="50+" description="Technologie & EPC-Partner Weltweit" className="md:border-l md:border-r"
               style={{
-                borderWidth: '0px 1px 0px 1px',
-                borderStyle: 'solid',
                 borderImageSource: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00DCBB 100%)',
                 borderImageSlice: 1
               }}
@@ -143,8 +141,8 @@ export const PartnershipsSection = () => {
 
       <section className="container mx-auto py-[7.5rem]">
         {/* Partners */}
-        <div className="flex flex-row gap-2.5">
-          <h3 className="text-gradient min-w-[21.5rem]">
+        <div className="flex flex-col md:flex-row items-center md:items-stretch gap-16 md:gap-2.5">
+          <h3 className="text-gradient md:min-w-[21.5rem]">
             Unsere
             <br />
             Partner

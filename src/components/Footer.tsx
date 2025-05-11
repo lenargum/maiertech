@@ -8,16 +8,16 @@ const Footer = () => {
     return (
         <footer className="pt-30 flex flex-col gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
             <LogomarkBgPattern />
-            <div className="container mx-auto flex justify-between items-start">
+            <div className="container mx-auto flex md:flex-row flex-col justify-between md:items-start items-center gap-10">
                 <div className="flex flex-col gap-10">
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col items-center md:items-stretch gap-4">
                         <Link to="/" className="flex items-center">
-                            <HeaderLogo />
+                            <HeaderLogo className="h-[60px] md:h-[41px]" />
                         </Link>
                         <span className="text-gradient" style={{ fontSize: "14px", lineHeight: "1.1", fontWeight: "600", letterSpacing: "0" }}>Energy Meets Intelligence</span>
                     </div>
 
-                    <span className="text-[#949699]">
+                    <span className="text-[#949699] text-center md:text-left">
                         MaierTech Solutions GmbH <br />
                         Messerschmittring 54 <br />
                         86343 Königsbrunn <br />
@@ -25,10 +25,10 @@ const Footer = () => {
                     </span>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 items-center md:items-stretch">
                     <h4 className="text-[#949699]">Navigation</h4>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col items-center md:items-stretch gap-2">
                         <Link to="/" className="h5">
                             Über Uns
                         </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
                     <Button variant="filled">Abonnieren</Button>
                 </div>
             </div>
-            <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex justify-between items-center">
+            <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex flex-col md:flex-row justify-between items-center">
                 <span className="text-[#949699]">© 2024. MaierTech. Alle Rechte vorbehalten</span>
 
                 <div className="flex gap-10">

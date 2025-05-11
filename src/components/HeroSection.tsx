@@ -32,7 +32,7 @@ export const HeroSection = () => {
             </Button>
           </div>
         </div>
-        <div className="max-w-5xl flex flex-row justify-center items-start self-center p-8 gap-2.5 bg-white/50 dark:bg-[#9496991A] outline-2 outline-[#EDE8FB] dark:outline-[#1A1A1A] -outline-offset-2 backdrop-blur-[10px] rounded-2xl">
+        <div className="max-w-5xl flex flex-col md:flex-row justify-center items-start self-center p-8 gap-16 md:gap-2.5 bg-white/50 dark:bg-[#9496991A] outline-2 outline-[#EDE8FB] dark:outline-[#1A1A1A] -outline-offset-2 backdrop-blur-[10px] rounded-2xl">
           <div className="flex flex-row gap-2.5">
             <div className="mt-3 h-[2px] w-6 bg-gradient shrink-0" />
             <span>

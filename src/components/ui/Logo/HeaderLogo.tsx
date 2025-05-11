@@ -1,13 +1,12 @@
 import React from "react";
 
-export const HeaderLogo: React.FC = () => {
+export const HeaderLogo: React.FC<{ className?: string }> = ({ className }) => {
     return (
         <svg
-            width={160}
-            height={41}
             viewBox="0 0 160 41"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={className}
         >
             <g clipPath="url(#clip0_1871_6020)">
                 <path
