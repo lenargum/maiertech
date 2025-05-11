@@ -11,7 +11,7 @@ export const ContactSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className="container py-30 relative" style={{ zIndex: 1 }}>
+    <section className="container mx-auto py-30 relative" style={{ zIndex: 1 }}>
       <ContactSectionBgPattern style={{ zIndex: -1 }} />
       <div className="max-w-[44.5rem] flex flex-col items-center mx-auto text-center">
         <h2 className="text-gradient-2 mb-6">Kontakt & Beratung</h2>

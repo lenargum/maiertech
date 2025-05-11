@@ -38,7 +38,7 @@ const projects: ProjectData[] = [
 
 export const ProjectsShowcase = () => {
   return (
-    <section className="container mx-auto flex flex-col items-center py-30 overflow-x-hidden">
+    <section className="container mx-auto flex flex-col items-center py-30 overflow-x-hidden md:overflow-x-visible">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
