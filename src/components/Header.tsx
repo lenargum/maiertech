@@ -3,10 +3,23 @@ import { Button } from './ui/Button/Button'
 import { HeaderLogo } from './ui/Logo/HeaderLogo'
 import { HoverBorderGradient } from './ui/hover-border-gradient'
 import { ThemeToggle } from './ThemeToggle'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'auto';
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      document.body.style.overflowY = 'auto';
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="max-w-[100vw] md:container md:mx-auto fixed top-0 left-0 right-0 z-10 p-4 md:p-0 md:pt-5">

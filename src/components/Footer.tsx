@@ -84,6 +84,7 @@ const LogomarkBgPattern = () => {
                 viewBox="0 0 1920 418"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="h-full"
             >
                 <g clipPath="url(#clip0_1925_4959)">
                     <mask id="path-1-inside-1_1925_4959" fill="white">
