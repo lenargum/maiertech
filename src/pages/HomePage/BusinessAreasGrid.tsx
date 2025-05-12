@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { GlowingEffect } from './ui/glowing-effect';
-import { Button } from './ui/Button';
+import { GlowingEffect } from '@/components/ui/glowing-effect';
+import { Button } from '@/components/ui/Button';
 
 import innovationen from "@/assets/business-areas/innovationen.png";
 import solutions from "@/assets/business-areas/solutions.png";
@@ -53,7 +53,7 @@ const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
         <img
           src={area.imageSrc}
           alt={area.title}
-          className="w-full h-[360px] overflow-hidden object-cover"
+          className="w-full h-[360px] md:h-[500px] lg:h-[360px] overflow-hidden object-cover"
         />
         <div className="px-[2.375rem] py-10 flex flex-col items-center text-center gap-5">
           <div className="flex flex-col items-center">
@@ -73,7 +73,7 @@ const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
 
 export const BusinessAreasGrid = () => {
   return (
-    <section className="py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
+    <section className="py-20 md:py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export const BusinessAreasGrid = () => {
         </span>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 drop-shadow-double-gray max-w-[1400px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3  gap-2.5 drop-shadow-double-gray max-w-[1400px]">
         {businessAreas.map((area) => (
           <BusinessAreaCard key={area.title} area={area} />
         ))}

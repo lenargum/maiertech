@@ -1,10 +1,12 @@
 import { useTheme } from '@/contexts/ThemeContext'
 import IconLightMode from '@/assets/darkmode/IconLightMode'
 import IconDarkMode from '@/assets/darkmode/IconDarkMode'
+import React from 'react'
 
-export function ThemeToggle() {
+
+const ThemeToggle:React.FC<{variant?: 'desktop' | 'mobile'}> = ({variant = 'desktop'}) => {
   const { darkMode, setDarkMode } = useTheme();
-  
+
   return (
     <div className="flex items-center gap-2">
       <button
@@ -15,7 +17,7 @@ export function ThemeToggle() {
         className={`cursor-pointer p-0 rounded-full transition-all duration-300 ease-in-out`}
         aria-label="Toggle light mode"
       >
-        <IconLightMode isGradientColor={!darkMode} />
+        <IconLightMode isGradientColor={!darkMode} variant={variant} />
       </button>
 
       <div className="w-px h-4 rounded bg-[#E6E7E8] dark:bg-[#1A1A1A]" />
@@ -28,8 +30,10 @@ export function ThemeToggle() {
         className={`cursor-pointer p-0 rounded-full transition-all duration-300 ease-in-out`}
         aria-label="Toggle dark mode"
       >
-        <IconDarkMode isGradientColor={darkMode} />
+        <IconDarkMode isGradientColor={darkMode} variant={variant} />
       </button>
     </div>
   );
 } 
+
+export default ThemeToggle;

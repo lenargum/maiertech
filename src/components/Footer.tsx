@@ -6,15 +6,15 @@ import { useTheme } from "@/contexts/ThemeContext";
 
 const Footer = () => {
     return (
-        <footer className="pt-30 flex flex-col gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
+        <footer className="pt-30 flex flex-col gap-10 md:gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
             <LogomarkBgPattern />
-            <div className="container mx-auto flex md:flex-row flex-col justify-between md:items-start items-center gap-10">
+            <div className="container mx-auto flex md:flex-row flex-col justify-between md:items-start items-center gap-15">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col items-center md:items-stretch gap-4">
                         <Link to="/" className="flex items-center">
                             <HeaderLogo className="h-[60px] md:h-[41px]" />
                         </Link>
-                        <span className="text-gradient" style={{ fontSize: "14px", lineHeight: "1.1", fontWeight: "600", letterSpacing: "0" }}>Energy Meets Intelligence</span>
+                        <span className="text-gradient text-[1.375rem]! md:text-[0.875rem]! leading-[1.1]! font-semibold! tracking-normal!">Energy Meets Intelligence</span>
                     </div>
 
                     <span className="text-[#949699] text-center md:text-left">
@@ -25,7 +25,7 @@ const Footer = () => {
                     </span>
                 </div>
 
-                <div className="flex flex-col gap-2 items-center md:items-stretch">
+                <div className="flex flex-col md:gap-2 gap-5 items-center md:items-stretch">
                     <h4 className="text-[#949699]">Navigation</h4>
 
                     <div className="flex flex-col items-center md:items-stretch gap-2">
@@ -47,12 +47,14 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="w-[342px] flex flex-col p-8 rounded-4xl bg-white/10 dark:bg-black/10 dark:border-1 dark:border-[#1A1A1A]" style={{ backdropFilter: "blur(8px)", boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.05), 0px 40px 60px rgba(0, 0, 0, 0.05)" }}>
+                <div className="w-full md:w-[342px] flex flex-col p-8 rounded-4xl bg-white/10 dark:bg-black/10 dark:border-1 dark:border-[#1A1A1A]" style={{ backdropFilter: "blur(8px)", boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.05), 0px 40px 60px rgba(0, 0, 0, 0.05)" }}>
                     <h4 className="mb-3 self-center">Kontakt Aufnehmen</h4>
                     <Input className="mb-2.5" placeholder="Ihr e-mail" />
                     <Button variant="filled">Abonnieren</Button>
                 </div>
             </div>
+
+
             <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex flex-col md:flex-row justify-between items-center">
                 <span className="text-[#949699]">© 2024. MaierTech. Alle Rechte vorbehalten</span>
 
@@ -78,13 +80,13 @@ const LogomarkBgPattern = () => {
     const {darkMode} = useTheme();
     
     return (
-        <div className="absolute inset-0 overflow-hidden" style={{ zIndex: -1 }}>
+        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-center" style={{ zIndex: -1 }}>
             <div className="absolute h-[100px] left-0 right-0 top-0" style={{ background: "linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%)" }} />
             <svg
-                viewBox="0 0 1920 418"
+                viewBox="0 0 1920 240"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-full"
+                className="w-[1920px] h-[1043px] shrink-0"
             >
                 <g clipPath="url(#clip0_1925_4959)">
                     <mask id="path-1-inside-1_1925_4959" fill="white">

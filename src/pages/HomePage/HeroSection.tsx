@@ -9,8 +9,15 @@ export const HeroSection = () => {
 
   return (
     <section
-      className="py-16 pt-48 pb-10"
-      style={{ backgroundImage: `linear-gradient(to bottom, rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 0) 0%, rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 0) 72%,  rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 1) 100%), url(${darkMode ? heroDarkImage : heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      className="py-16 pt-80 lg:pt-48 pb-10 relative"
+    >
+      <div
+        className="lg:block hidden absolute inset-0 z-0"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 0) 0%, rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 0) 72%,  rgba(${darkMode ? "0,0,0" : "255, 255, 255"}, 1) 100%), url(${darkMode ? heroDarkImage : heroImage})`,
+          backgroundSize: 'cover', backgroundPosition: 'center'
+        }}
+      />
       <Spotlight />
       <div className="container mx-auto flex flex-col gap-20 drop-shadow-triple-white z-10">
         <div className="text-center flex flex-col gap-8 items-center justify-center">
@@ -32,7 +39,7 @@ export const HeroSection = () => {
             </Button>
           </div>
         </div>
-        <div className="max-w-5xl flex flex-col md:flex-row justify-center items-start self-center p-8 gap-16 md:gap-2.5 bg-white/50 dark:bg-[#9496991A] outline-2 outline-[#EDE8FB] dark:outline-[#1A1A1A] -outline-offset-2 backdrop-blur-[10px] rounded-2xl">
+        <div className="max-w-5xl flex flex-col lg:flex-row justify-center items-start self-center p-8 gap-16 lg:gap-2.5 bg-white/50 dark:bg-[#9496991A] outline-2 outline-[#EDE8FB] dark:outline-[#1A1A1A] -outline-offset-2 backdrop-blur-[10px] rounded-2xl">
           <div className="flex flex-row gap-2.5">
             <div className="mt-3 h-[2px] w-6 bg-gradient shrink-0" />
             <span>

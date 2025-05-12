@@ -1,7 +1,7 @@
 import React from "react"
-import { Input } from "./ui/Input"
-import { Button } from "./ui/Button"
-import { CardSpotlight } from "./ui/CardSpotlight"
+import { Input } from "../../components/ui/Input"
+import { Button } from "../../components/ui/Button"
+import { CardSpotlight } from "../../components/ui/CardSpotlight"
 
 import GermanyFlag from "@/assets/flags/germany.svg"
 import TurkeyFlag from "@/assets/flags/turkey.svg"
@@ -11,8 +11,8 @@ export const ContactSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className="container mx-auto py-30 relative" style={{ zIndex: 1 }}>
-      <ContactSectionBgPattern style={{ zIndex: -1 }} />
+    <section className="container mx-auto py-20 md:py-30 relative" style={{ zIndex: 1 }}>
+      <ContactSectionBgPattern style={{ zIndex: -1, pointerEvents: 'none' }} />
       <div className="max-w-[44.5rem] flex flex-col items-center mx-auto text-center">
         <h2 className="text-gradient-2 mb-6">Kontakt & Beratung</h2>
         <span className="mb-15">

@@ -4,7 +4,7 @@ import GermanyCover from "@/assets/projects/germany.png";
 import RomaniaCover from "@/assets/projects/romania.png";
 import VietnamCover from "@/assets/projects/vietnam.png";
 import SouthAfricaCover from "@/assets/projects/south-africa.png";
-import { Carousel } from "./ui/carousel";
+import { Carousel } from "../../components/ui/carousel";
 
 
 interface ProjectData {
@@ -38,12 +38,12 @@ const projects: ProjectData[] = [
 
 export const ProjectsShowcase = () => {
   return (
-    <section className="container mx-auto flex flex-col items-center py-30 overflow-x-hidden md:overflow-x-visible">
+    <section className="flex flex-col items-center py-20 md:py-30">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-15 max-w-[43.5rem]"
+        className="container mx-auto text-center mb-15 max-w-[43.5rem]"
       >
         <h2 className="text-gradient-2 mb-10">Unsere realisierten Projekte</h2>
         <span>
@@ -55,7 +55,9 @@ export const ProjectsShowcase = () => {
         </span>
       </motion.div>
 
-      <Carousel slides={projects} />
+      <div className="w-full overflow-hidden">
+        <Carousel slides={projects} />
+      </div>
     </section>
   );
 };

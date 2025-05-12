@@ -1,9 +1,9 @@
-import { HeroSection } from '../components/HeroSection'
-import { BusinessAreasGrid } from '../components/BusinessAreasGrid'
-import { PartnershipsSection } from '../components/PartnershipsSection'
-import { ProjectsShowcase } from '../components/ProjectsShowcase'
-import { ContactSection } from '../components/ContactSection'
-
+import { HeroSection } from './HeroSection'
+import { BusinessAreasGrid } from './BusinessAreasGrid'
+import { PartnershipsSection } from './PartnershipsSection'
+import { ProjectsShowcase } from './ProjectsShowcase'
+import { ContactSection } from './ContactSection'
+import { StatsSection } from './StatsSection'
 const HomePage = () => {
   return (
     <>
@@ -12,6 +12,9 @@ const HomePage = () => {
 
       {/* Business Areas Section */}
       <BusinessAreasGrid />
+
+      {/* Stats Section */}
+      <StatsSection />
 
       {/* Success Stories & Partnership Section */}
       <PartnershipsSection />
