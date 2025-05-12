@@ -6,18 +6,18 @@ import { useTheme } from "@/contexts/ThemeContext";
 
 const Footer = () => {
     return (
-        <footer className="pt-30 flex flex-col gap-10 md:gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
+        <footer className="pt-30 flex flex-col gap-10 lg:gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
             <LogomarkBgPattern />
-            <div className="container mx-auto flex md:flex-row flex-col justify-between md:items-start items-center gap-15">
+            <div className="container mx-auto flex lg:flex-row flex-col justify-between lg:items-start items-center gap-15">
                 <div className="flex flex-col gap-10">
-                    <div className="flex flex-col items-center md:items-stretch gap-4">
+                    <div className="flex flex-col items-center lg:items-stretch gap-4">
                         <Link to="/" className="flex items-center">
-                            <HeaderLogo className="h-[60px] md:h-[41px]" />
+                            <HeaderLogo className="h-[60px] lg:h-[41px]" />
                         </Link>
-                        <span className="text-gradient text-[1.375rem]! md:text-[0.875rem]! leading-[1.1]! font-semibold! tracking-normal!">Energy Meets Intelligence</span>
+                        <span className="text-gradient text-[1.375rem]! lg:text-[0.875rem]! leading-[1.1]! font-semibold! tracking-normal!">Energy Meets Intelligence</span>
                     </div>
 
-                    <span className="text-[#949699] text-center md:text-left">
+                    <span className="text-[#949699] text-center lg:text-left">
                         MaierTech Solutions GmbH <br />
                         Messerschmittring 54 <br />
                         86343 Königsbrunn <br />
@@ -25,10 +25,10 @@ const Footer = () => {
                     </span>
                 </div>
 
-                <div className="flex flex-col md:gap-2 gap-5 items-center md:items-stretch">
+                <div className="flex flex-col lg:gap-2 gap-5 items-center lg:items-stretch">
                     <h4 className="text-[#949699]">Navigation</h4>
 
-                    <div className="flex flex-col items-center md:items-stretch gap-2">
+                    <div className="flex flex-col items-center lg:items-stretch gap-2">
                         <Link to="/" className="h5">
                             Über Uns
                         </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex flex-col md:flex-row justify-between items-center">
+            <div className="container mx-auto py-5 border-t border-[#E6E7E8] dark:border-[#1A1A1A] flex flex-col lg:flex-row justify-between items-center">
                 <span className="text-[#949699]">© 2024. MaierTech. Alle Rechte vorbehalten</span>
 
                 <div className="flex gap-10">

@@ -11,7 +11,7 @@ export const ContactSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className="container mx-auto py-20 md:py-30 relative" style={{ zIndex: 1 }}>
+    <section className="container mx-auto py-20 lg:py-30 relative" style={{ zIndex: 1 }}>
       <ContactSectionBgPattern style={{ zIndex: -1, pointerEvents: 'none' }} />
       <div className="max-w-[44.5rem] flex flex-col items-center mx-auto text-center">
         <h2 className="text-gradient-2 mb-6">Kontakt & Beratung</h2>
@@ -28,7 +28,7 @@ export const ContactSection = () => {
             backdropFilter: "blur(5px)",
           }}
         >
-          <div className="relative flex flex-col md:flex-row gap-2.5 z-20">
+          <div className="relative flex flex-col lg:flex-row gap-2.5 z-20">
             <div className="p-10 flex flex-col text-center">
               <h4 className="mb-5 drop-shadow-triple-white">
                 Direktes Kontaktformular
@@ -55,7 +55,7 @@ export const ContactSection = () => {
               </form>
             </div>
 
-            <div className="p-10 w-full md:w-[280px] flex-shrink-0 rounded-[1.75rem] border-2 border-gray-300/20 dark:border-gray-700/20 text-start relative overflow-hidden"
+            <div className="p-10 w-full lg:w-[280px] flex-shrink-0 rounded-[1.75rem] border-2 border-gray-300/20 dark:border-gray-700/20 text-start relative overflow-hidden"
               style={{
                 zIndex: 1,
                 background: 'linear-gradient(252.44deg, rgba(0, 150, 237, 0.05) 0%, rgba(0, 220, 187, 0.05) 100%)'

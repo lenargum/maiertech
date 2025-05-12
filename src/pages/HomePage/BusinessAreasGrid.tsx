@@ -73,7 +73,7 @@ const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
 
 export const BusinessAreasGrid = () => {
   return (
-    <section className="py-20 md:py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
+    <section className="py-20 lg:py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

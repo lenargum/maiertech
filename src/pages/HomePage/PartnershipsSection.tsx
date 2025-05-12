@@ -76,7 +76,7 @@ export const PartnershipsSection = () => {
   ]
 
   return (
-    <section className="container mx-auto pt-15 pb-20 md:py-[7.5rem]">
+    <section className="container mx-auto pt-15 pb-20 lg:py-[7.5rem]">
       {/* Partners */}
       <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-16 lg:gap-2.5">
         <h3 className="text-gradient lg:min-w-[21.5rem]">

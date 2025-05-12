@@ -4,7 +4,7 @@ import { useTheme } from "@/contexts/ThemeContext"
 
 export const StatsSection = () => {
     return (
-        <section className="container mx-auto pt-20 md:pt-30 flex flex-col gap-15" style={{ zIndex: 1 }}>
+        <section className="container mx-auto pt-20 lg:pt-30 flex flex-col gap-15" style={{ zIndex: 1 }}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -27,14 +27,14 @@ export const StatsSection = () => {
             <div className="relative" style={{ background: "radial-gradient(50% 100.86% at 50% 100%, rgba(0, 220, 187, 0.3) 0%, rgba(255, 255, 255, 0) 100%)" }}>
                 <PartnerShipSectionBgPattern />
 
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3" style={{
+                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3" style={{
                     borderWidth: '0px 0px 1px 0px',
                     borderStyle: 'solid',
                     borderImageSource: "linear-gradient(90deg, rgba(0, 220, 187, 0) 0%, rgba(0, 220, 187, 1) 40%, rgba(0, 220, 187, 1) 60%, rgba(0, 220, 187, 0) 100%)",
                     borderImageSlice: 1
                 }}>
                     <StatsGridItem value="22+" description="Jahre Erfahrung in der Solarbranche" />
-                    <StatsGridItem value="50+" description="Technologie & EPC-Partner Weltweit" className="md:border-l md:border-r"
+                    <StatsGridItem value="50+" description="Technologie & EPC-Partner Weltweit" className="lg:border-l lg:border-r"
                         style={{
                             borderImageSource: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00DCBB 100%)',
                             borderImageSlice: 1
@@ -53,7 +53,7 @@ const StatsGridItem = ({ value, description, style, className }: { value: string
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className={`py-10 md:py-20 text-center flex flex-col items-center justify-center ${className}`}
+            className={`py-10 lg:py-20 text-center flex flex-col items-center justify-center ${className}`}
             style={style}
         >
             <span className="text-headline text-gradient">{value}</span>

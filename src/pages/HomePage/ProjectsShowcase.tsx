@@ -38,7 +38,7 @@ const projects: ProjectData[] = [
 
 export const ProjectsShowcase = () => {
   return (
-    <section className="flex flex-col items-center py-20 md:py-30">
+    <section className="flex flex-col items-center py-20 lg:py-30">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
