@@ -17,8 +17,7 @@ const HistorySection: React.FC = () => {
             </div>
 
             <div className="flex justify-center items-center flex-grow max-h-[28.75rem] relative">
-                <img src={darkMode ? historyBlackImage : historyImage} alt="History" className="max-w-[44rem] w-full aspect-square max-h-[28.75rem] lg:max-h-none" />
-                {darkMode && <HistoryImageBgForDarkMode />}
+                <img src={darkMode ? historyBlackImage : historyImage} alt="History" className="max-w-[44rem] w-full aspect-square max-h-[28.75rem] lg:max-h-none dark:drop-shadow-[0_0_300px_#794DE3]" />
             </div>
         </section>
     )
@@ -26,35 +25,3 @@ const HistorySection: React.FC = () => {
 
 export default HistorySection;
 
-const HistoryImageBgForDarkMode = () => (<svg
-    viewBox="0 0 1720 1005"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[44rem] w-full aspect-square max-h-[28.75rem] lg:max-h-none scale-200"
-    style={{ zIndex: -1 }}
->
-    <g opacity="0.3" filter="url(#filter0_f_1_70)">
-        <circle cx={860} cy={503} r={360} fill="#794DE3" />
-    </g>
-    <defs>
-        <filter
-            id="filter0_f_1_70"
-            x={0}
-            y={-357}
-            width={1720}
-            height={1720}
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-        >
-            <feFlood floodOpacity={0} result="BackgroundImageFix" />
-            <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-            />
-            <feGaussianBlur stdDeviation={250} result="effect1_foregroundBlur_1_70" />
-        </filter>
-    </defs>
-</svg>
-)

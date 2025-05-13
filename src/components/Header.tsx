@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="max-w-[100vw] lg:container lg:mx-auto fixed top-0 left-0 right-0 z-50 p-4 lg:p-0 lg:pt-5">
-      <HoverBorderGradient containerClassName="rounded-full w-full" className="flex justify-between items-center gap-8 py-4 px-5 lg:p-5 lg:pl-8 dark:border-[#1A1A1A] h-20 bg-white dark:bg-black backdrop-blur-[10px]">
+      <HoverBorderGradient containerClassName="rounded-full w-full" className="flex justify-between items-center gap-8 py-2.5 px-5 lg:p-5 lg:pl-8 dark:border-[#1A1A1A] h-15 lg:h-20 bg-white dark:bg-black backdrop-blur-[10px]">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <HeaderLogo className="h-[28px] lg:h-[41px]" />
@@ -94,7 +94,7 @@ const Header = () => {
       </HoverBorderGradient>
 
       {isMobileMenuOpen && (
-        <div className="flex lg:hidden fixed z-50 inset-0 h-screen w-screen bg-white dark:bg-black backdrop-blur-[10px] flex-col justify-between items-center gap-10 p-8"
+        <div className="flex lg:hidden fixed z-50 inset-0 h-screen w-screen bg-white dark:bg-black backdrop-blur-[10px] flex-col justify-between items-center gap-10 px-8 py-5.5"
           onClick={() => setIsMobileMenuOpen(prev => !prev)}
         >
           <div className="flex items-center justify-between w-full py-[calc(6px)] px-[calc(0.25rem+2px)]">

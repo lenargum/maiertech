@@ -213,184 +213,249 @@ const SVGBgPattern = () => {
 
     return (
         <svg
-            viewBox="280 200 1360 600"
+            viewBox="280 199 1360 598"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className=''
         >
-            <g clipPath="url(#clip0_479_4983)">
+            <g clipPath="url(#clip0_479_5157)">
                 <mask
-                    id="mask0_479_4983"
+                    id="mask0_479_5157"
                     style={{ maskType: "luminance" }}
                     maskUnits="userSpaceOnUse"
                     x={0}
-                    y={180}
+                    y={178}
                     width={1920}
                     height={640}
                 >
                     <rect
-                        y={180}
+                        y={178}
                         width={1920}
                         height={640}
-                        fill="url(#paint0_radial_479_4983)"
+                        fill="url(#paint0_radial_479_5157)"
                     />
                 </mask>
-                <g mask="url(#mask0_479_4983)">
+                <g mask="url(#mask0_479_5157)" className="hidden lg:block">
+                    <g opacity="0.5">
+                        <circle
+                            opacity="0.5"
+                            cx="1564.05"
+                            cy="502.867"
+                            r={359}
+                            fill="url(#paint1_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                        <circle
+                            opacity="0.5"
+                            cx="1564.05"
+                            cy="502.867"
+                            r={215}
+                            fill="url(#paint2_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                    </g>
+                    <g opacity="0.5">
+                        <circle
+                            opacity="0.5"
+                            cx={356}
+                            cy="502.867"
+                            r={359}
+                            fill="url(#paint3_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                        <circle
+                            opacity="0.5"
+                            cx={356}
+                            cy="502.867"
+                            r={215}
+                            fill="url(#paint4_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                    </g>
+                    <g opacity="0.5">
+                        <circle
+                            opacity="0.5"
+                            cx={960}
+                            cy={498}
+                            r={649}
+                            fill="url(#paint5_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                        <circle
+                            opacity="0.5"
+                            cx={960}
+                            cy={498}
+                            r={389}
+                            fill="url(#paint6_radial_479_5157)"
+                            fillOpacity="0.5"
+                            stroke="#00DCBB"
+                            strokeWidth={2}
+                        />
+                    </g>
                     <ellipse
                         opacity="0.5"
                         cx={960}
-                        cy={500}
+                        cy={498}
                         rx={700}
                         ry={178}
-                        fill="url(#paint7_radial_479_4983)"
+                        fill="url(#paint7_radial_479_5157)"
                         fillOpacity="0.5"
                     />
                     <path
-                        d="M260 500H1660"
-                        stroke="url(#paint8_radial_479_4983)"
+                        d="M260 498H1660"
+                        stroke="url(#paint8_radial_479_5157)"
                         strokeOpacity="0.5"
                         strokeWidth={5}
                     />
                 </g>
             </g>
-            <g filter="url(#filter0_f_479_4983)">
+            <g filter="url(#filter0_f_479_5157)">
                 <circle cx={960} cy={500} r={250} fill={darkMode ? "black" : "white"} />
             </g>
             <path
                 d="M1200.55 474.927L1257.58 463.247C1259.22 462.912 1260.27 461.314 1259.94 459.677L1259.51 457.602C1259.18 455.965 1257.58 454.91 1255.95 455.245L1198.92 466.925C1197.28 467.26 1196.23 468.858 1196.56 470.495L1196.99 472.57C1197.32 474.206 1198.92 475.262 1200.55 474.927Z"
-                fill="url(#paint9_linear_479_4983)"
+                fill="url(#paint9_linear_479_5157)"
             />
             <path
                 d="M1188.11 429.804L1240.72 407.52C1242.53 406.752 1243.38 404.657 1242.61 402.842L1241.14 399.35C1240.37 397.534 1238.28 396.685 1236.46 397.453L1183.85 419.737C1182.04 420.505 1181.19 422.599 1181.96 424.415L1183.43 427.907C1184.2 429.723 1186.29 430.572 1188.11 429.804Z"
-                fill="url(#paint10_linear_479_4983)"
+                fill="url(#paint10_linear_479_5157)"
             />
             <path
                 d="M1167.65 388.425L1214.08 357.018C1215.96 355.746 1216.46 353.188 1215.19 351.305L1212.13 346.776C1210.86 344.893 1208.31 344.398 1206.43 345.67L1160 377.077C1158.11 378.349 1157.62 380.907 1158.89 382.79L1161.95 387.319C1163.22 389.201 1165.77 389.697 1167.65 388.425Z"
-                fill="url(#paint11_linear_479_4983)"
+                fill="url(#paint11_linear_479_5157)"
             />
             <path
                 d="M1139.99 351.734L1178.85 312.831C1180.66 311.011 1180.66 308.061 1178.85 306.242L1173.8 301.194C1171.99 299.374 1169.04 299.374 1167.22 301.194L1128.37 340.098C1126.55 341.917 1126.55 344.867 1128.37 346.686L1133.41 351.734C1135.23 353.554 1138.18 353.554 1139.99 351.734Z"
-                fill="url(#paint12_linear_479_4983)"
+                fill="url(#paint12_linear_479_5157)"
             />
             <path
                 d="M1105.97 320.705L1136.1 276.05C1137.71 273.66 1137.08 270.413 1134.69 268.798L1127.43 263.887C1125.04 262.272 1121.8 262.901 1120.19 265.291L1090.06 309.946C1088.45 312.337 1089.08 315.584 1091.47 317.199L1098.73 322.11C1101.11 323.724 1104.36 323.096 1105.97 320.705Z"
-                fill="url(#paint13_linear_479_4983)"
+                fill="url(#paint13_linear_479_5157)"
             />
             <path
                 d="M1066.39 296.265L1086.93 247.637C1088.17 244.703 1086.8 241.319 1083.87 240.077L1074.26 236.007C1071.33 234.766 1067.95 236.138 1066.71 239.072L1046.17 287.7C1044.93 290.634 1046.3 294.018 1049.23 295.259L1058.84 299.33C1061.77 300.571 1065.15 299.199 1066.39 296.265Z"
-                fill="url(#paint14_linear_479_4983)"
+                fill="url(#paint14_linear_479_5157)"
             />
             <path
                 d="M1022.11 279.554L1032.46 228.892C1033.15 225.477 1030.96 222.141 1027.54 221.443L1015.68 219.014C1012.27 218.315 1008.94 220.517 1008.24 223.933L997.895 274.595C997.197 278.011 999.397 281.346 1002.81 282.044L1014.67 284.473C1018.08 285.172 1021.41 282.97 1022.11 279.554Z"
-                fill="url(#paint15_linear_479_4983)"
+                fill="url(#paint15_linear_479_5157)"
             />
             <path
                 d="M953.109 278.336H966.845C970.639 278.336 973.714 275.257 973.714 271.459V220.877C973.714 217.079 970.639 214 966.845 214H953.109C949.315 214 946.24 217.079 946.24 220.877V271.459C946.24 275.257 949.315 278.336 953.109 278.336Z"
-                fill="url(#paint16_linear_479_4983)"
+                fill="url(#paint16_linear_479_5157)"
             />
             <path
                 d="M905.302 284.425L917.162 281.996C920.573 281.297 922.773 277.962 922.075 274.546L911.726 223.885C911.028 220.469 907.697 218.267 904.286 218.965L892.426 221.394C889.015 222.093 886.815 225.428 887.513 228.844L897.862 279.505C898.56 282.921 901.891 285.124 905.302 284.425Z"
-                fill="url(#paint17_linear_479_4983)"
+                fill="url(#paint17_linear_479_5157)"
             />
             <path
                 d="M861.09 299.396L870.7 295.326C873.63 294.085 875 290.7 873.761 287.766L853.216 239.139C851.976 236.205 848.596 234.833 845.666 236.074L836.057 240.144C833.127 241.385 831.756 244.77 832.996 247.704L853.541 296.331C854.78 299.265 858.16 300.637 861.09 299.396Z"
-                fill="url(#paint18_linear_479_4983)"
+                fill="url(#paint18_linear_479_5157)"
             />
             <path
                 d="M821.222 322.082L828.483 317.171C830.87 315.557 831.498 312.309 829.885 309.919L799.759 265.264C798.146 262.874 794.903 262.245 792.516 263.86L785.255 268.771C782.868 270.385 782.24 273.632 783.852 276.023L813.979 320.678C815.592 323.068 818.835 323.697 821.222 322.082Z"
-                fill="url(#paint19_linear_479_4983)"
+                fill="url(#paint19_linear_479_5157)"
             />
             <path
                 d="M786.543 351.745L791.584 346.697C793.401 344.878 793.401 341.928 791.584 340.108L752.731 301.205C750.914 299.385 747.968 299.385 746.151 301.205L741.109 306.253C739.292 308.072 739.292 311.022 741.109 312.842L779.962 351.745C781.78 353.565 784.726 353.565 786.543 351.745Z"
-                fill="url(#paint20_linear_479_4983)"
+                fill="url(#paint20_linear_479_5157)"
             />
             <path
                 d="M758.028 387.327L761.083 382.798C762.354 380.916 761.859 378.358 759.978 377.086L713.545 345.679C711.665 344.407 709.11 344.902 707.84 346.785L704.785 351.314C703.514 353.197 704.009 355.754 705.889 357.026L752.323 388.434C754.203 389.706 756.757 389.21 758.028 387.327Z"
-                fill="url(#paint21_linear_479_4983)"
+                fill="url(#paint21_linear_479_5157)"
             />
             <path
                 d="M736.468 427.878L737.944 424.386C738.711 422.571 737.863 420.476 736.049 419.708L683.44 397.424C681.627 396.656 679.535 397.505 678.768 399.321L677.292 402.813C676.525 404.628 677.374 406.723 679.187 407.491L731.796 429.775C733.609 430.543 735.701 429.694 736.468 427.878Z"
-                fill="url(#paint22_linear_479_4983)"
+                fill="url(#paint22_linear_479_5157)"
             />
             <path
                 d="M723.012 472.58L723.435 470.506C723.77 468.869 722.716 467.271 721.081 466.936L664.051 455.256C662.416 454.921 660.82 455.976 660.486 457.613L660.062 459.688C659.728 461.325 660.782 462.923 662.417 463.258L719.446 474.938C721.081 475.273 722.677 474.217 723.012 472.58Z"
-                fill="url(#paint23_linear_479_4983)"
+                fill="url(#paint23_linear_479_5157)"
             />
             <path
                 d="M719.446 525.073L662.416 536.753C660.782 537.088 659.728 538.686 660.062 540.323L660.486 542.398C660.82 544.035 662.416 545.09 664.051 544.755L721.081 533.075C722.716 532.74 723.77 531.142 723.435 529.505L723.012 527.43C722.677 525.794 721.081 524.738 719.446 525.073Z"
-                fill="url(#paint24_linear_479_4983)"
+                fill="url(#paint24_linear_479_5157)"
             />
             <path
                 d="M731.893 570.196L679.284 592.48C677.471 593.248 676.622 595.343 677.39 597.158L678.865 600.65C679.632 602.466 681.724 603.315 683.537 602.547L736.146 580.263C737.96 579.495 738.808 577.401 738.041 575.585L736.566 572.093C735.798 570.277 733.706 569.428 731.893 570.196Z"
-                fill="url(#paint25_linear_479_4983)"
+                fill="url(#paint25_linear_479_5157)"
             />
             <path
                 d="M752.349 611.575L705.916 642.982C704.035 644.254 703.541 646.812 704.811 648.695L707.866 653.224C709.137 655.107 711.691 655.602 713.571 654.33L760.005 622.923C761.885 621.651 762.38 619.093 761.11 617.21L758.054 612.681C756.784 610.799 754.229 610.303 752.349 611.575Z"
-                fill="url(#paint26_linear_479_4983)"
+                fill="url(#paint26_linear_479_5157)"
             />
             <path
                 d="M780.007 648.266L741.154 687.169C739.337 688.989 739.337 691.939 741.154 693.758L746.196 698.806C748.013 700.626 750.959 700.626 752.776 698.806L791.629 659.902C793.446 658.083 793.446 655.133 791.629 653.314L786.588 648.266C784.771 646.446 781.825 646.446 780.007 648.266Z"
-                fill="url(#paint27_linear_479_4983)"
+                fill="url(#paint27_linear_479_5157)"
             />
             <path
                 d="M814.031 679.295L783.905 723.95C782.292 726.34 782.92 729.587 785.307 731.202L792.568 736.113C794.955 737.728 798.198 737.099 799.811 734.709L829.938 690.054C831.55 687.663 830.922 684.416 828.535 682.801L821.275 677.89C818.887 676.276 815.644 676.904 814.031 679.295Z"
-                fill="url(#paint28_linear_479_4983)"
+                fill="url(#paint28_linear_479_5157)"
             />
             <path
                 d="M853.611 703.735L833.066 752.363C831.827 755.297 833.197 758.681 836.128 759.923L845.737 763.993C848.667 765.234 852.047 763.862 853.286 760.928L873.831 712.3C875.071 709.366 873.7 705.982 870.77 704.741L861.161 700.67C858.231 699.429 854.851 700.801 853.611 703.735Z"
-                fill="url(#paint29_linear_479_4983)"
+                fill="url(#paint29_linear_479_5157)"
             />
             <path
                 d="M897.892 720.446L887.543 771.108C886.845 774.523 889.045 777.859 892.456 778.557L904.316 780.986C907.727 781.685 911.058 779.483 911.756 776.067L922.105 725.405C922.803 721.989 920.603 718.654 917.192 717.956L905.332 715.527C901.921 714.828 898.59 717.03 897.892 720.446Z"
-                fill="url(#paint30_linear_479_4983)"
+                fill="url(#paint30_linear_479_5157)"
             />
             <path
                 d="M966.891 721.664H953.155C949.361 721.664 946.286 724.743 946.286 728.541V779.123C946.286 782.921 949.361 786 953.155 786H966.891C970.685 786 973.76 782.921 973.76 779.123V728.541C973.76 724.743 970.685 721.664 966.891 721.664Z"
-                fill="url(#paint31_linear_479_4983)"
+                fill="url(#paint31_linear_479_5157)"
             />
             <path
                 d="M1014.7 715.575L1002.84 718.004C999.427 718.703 997.227 722.038 997.925 725.454L1008.27 776.115C1008.97 779.531 1012.3 781.733 1015.71 781.035L1027.57 778.606C1030.98 777.907 1033.18 774.572 1032.49 771.156L1022.14 720.495C1021.44 717.079 1018.11 714.876 1014.7 715.575Z"
-                fill="url(#paint32_linear_479_4983)"
+                fill="url(#paint32_linear_479_5157)"
             />
             <path
                 d="M1058.91 700.604L1049.3 704.674C1046.37 705.915 1045 709.3 1046.24 712.234L1066.78 760.861C1068.02 763.795 1071.4 765.167 1074.33 763.926L1083.94 759.856C1086.87 758.615 1088.24 755.23 1087 752.296L1066.46 703.669C1065.22 700.735 1061.84 699.363 1058.91 700.604Z"
-                fill="url(#paint33_linear_479_4983)"
+                fill="url(#paint33_linear_479_5157)"
             />
             <path
                 d="M1098.78 677.918L1091.52 682.829C1089.13 684.443 1088.5 687.691 1090.11 690.081L1120.24 734.736C1121.85 737.126 1125.1 737.755 1127.48 736.14L1134.74 731.229C1137.13 729.615 1137.76 726.368 1136.15 723.977L1106.02 679.322C1104.41 676.932 1101.17 676.303 1098.78 677.918Z"
-                fill="url(#paint34_linear_479_4983)"
+                fill="url(#paint34_linear_479_5157)"
             />
             <path
                 d="M1133.46 648.255L1128.42 653.303C1126.6 655.122 1126.6 658.072 1128.42 659.892L1167.27 698.795C1169.09 700.615 1172.03 700.615 1173.85 698.795L1178.89 693.747C1180.71 691.928 1180.71 688.978 1178.89 687.158L1140.04 648.255C1138.22 646.435 1135.27 646.435 1133.46 648.255Z"
-                fill="url(#paint35_linear_479_4983)"
+                fill="url(#paint35_linear_479_5157)"
             />
             <path
                 d="M1161.97 612.673L1158.92 617.202C1157.65 619.084 1158.14 621.642 1160.02 622.914L1206.45 654.321C1208.34 655.593 1210.89 655.098 1212.16 653.215L1215.22 648.686C1216.49 646.803 1215.99 644.246 1214.11 642.974L1167.68 611.566C1165.8 610.294 1163.24 610.79 1161.97 612.673Z"
-                fill="url(#paint36_linear_479_4983)"
+                fill="url(#paint36_linear_479_5157)"
             />
             <path
                 d="M1183.53 572.122L1182.06 575.614C1181.29 577.429 1182.14 579.524 1183.95 580.292L1236.56 602.576C1238.37 603.344 1240.47 602.495 1241.23 600.679L1242.71 597.187C1243.47 595.372 1242.63 593.277 1240.81 592.509L1188.2 570.225C1186.39 569.457 1184.3 570.306 1183.53 572.122Z"
-                fill="url(#paint37_linear_479_4983)"
+                fill="url(#paint37_linear_479_5157)"
             />
             <path
                 d="M1196.99 527.42L1196.56 529.494C1196.23 531.131 1197.28 532.729 1198.92 533.064L1255.95 544.744C1257.58 545.079 1259.18 544.024 1259.51 542.387L1259.94 540.312C1260.27 538.675 1259.22 537.077 1257.58 536.742L1200.55 525.062C1198.92 524.727 1197.32 525.783 1196.99 527.42Z"
-                fill="url(#paint38_linear_479_4983)"
+                fill="url(#paint38_linear_479_5157)"
             />
-            <g clipPath="url(#clip1_479_4983)">
+            <g clipPath="url(#clip1_479_5157)">
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M946.355 467.535L946.353 467.533C940.391 457.319 931.898 442.771 931.591 442.335C929.419 438.897 926.435 435.903 922.699 433.692C910.099 426.221 893.86 430.449 886.434 443.125L835.669 529.825C828.243 542.502 832.446 558.838 845.047 566.308C857.648 573.779 873.886 569.551 881.313 556.875L909.26 509.145C919.07 492.383 931.583 480.835 952.104 477.37C951.942 477.106 949.501 472.925 946.355 467.535ZM1053.62 477.37L1033.6 443.134C1033.6 443.134 1033.58 443.108 1033.57 443.09C1031.36 439.332 1028.22 436.072 1024.22 433.7C1011.62 426.23 995.381 430.458 987.955 443.134L960.008 490.864C950.197 507.626 937.685 519.174 917.164 522.639C917.564 523.299 920.429 528.21 923.905 534.169C929.643 544.004 937.045 556.692 937.782 557.843C939.946 561.21 942.895 564.141 946.568 566.308C959.169 573.779 975.408 569.551 982.834 556.875L1010.78 509.145C1020.59 492.383 1033.1 480.835 1053.62 477.37H1053.62ZM1029.17 520.348C1038.71 518.04 1049.15 515.517 1064.3 516.856C1077.62 518.259 1088 529.585 1088 543.354C1088 558.065 1076.14 569.995 1061.52 569.995C1051.81 569.995 1043.32 564.727 1038.71 556.883C1038.7 556.883 1038.69 556.866 1038.69 556.866L1018.65 522.63C1022.16 522.041 1025.6 521.209 1029.17 520.348Z"
-                    fill="url(#paint39_linear_479_4983)"
+                    fill="url(#paint39_linear_479_5157)"
                 />
                 <path
                     d="M1064.27 516.721C1043.47 514.882 1031.54 520.327 1018.62 522.495L1038.66 556.731C1038.66 556.731 1038.66 556.748 1038.68 556.748C1043.29 564.592 1051.77 569.86 1061.49 569.86C1076.12 569.86 1087.97 557.93 1087.97 543.219C1087.97 529.441 1077.58 518.115 1064.27 516.721ZM1061.49 566.085C1053.49 566.085 1045.99 561.767 1041.91 554.83C1041.5 554.172 1024.94 525.844 1024.54 525.168C1034.99 522.823 1043.11 520.158 1055.99 520.123C1058.53 520.123 1061.16 520.238 1063.8 520.469H1063.88C1075.47 521.695 1084.22 531.467 1084.22 543.219C1084.22 555.825 1074.02 566.085 1061.49 566.085ZM931.557 442.19C929.385 438.752 926.4 435.767 922.665 433.556C918.444 431.05 913.817 429.86 909.252 429.86C900.174 429.86 891.344 434.559 886.408 442.99L835.642 529.69C828.216 542.366 832.41 558.703 845.02 566.165C849.241 568.67 853.868 569.86 858.442 569.86C867.511 569.86 876.341 565.17 881.277 556.731L909.225 509.001C919.036 492.247 931.548 480.699 952.07 477.226C951.593 476.462 932.016 442.856 931.557 442.19ZM905.993 507.091L878.045 554.821C873.975 561.767 866.46 566.085 858.433 566.085C854.398 566.085 850.415 564.983 846.919 562.913C836.119 556.517 832.516 542.473 838.874 531.609L889.64 444.908C893.71 437.953 901.225 433.635 909.252 433.635C916.89 433.591 924.405 437.748 928.431 444.295C929.164 445.468 937.147 459.148 942.454 468.227C944.008 470.892 945.227 472.979 946.171 474.596C929.111 478.825 916.563 489.023 905.993 507.091ZM1033.57 442.99C1033.57 442.99 1033.55 442.963 1033.54 442.945C1031.33 439.188 1028.19 435.927 1024.19 433.556C1011.58 426.085 995.348 430.313 987.921 442.99L959.973 490.719C950.163 507.473 937.65 519.021 917.137 522.495C918.197 524.245 936.564 555.851 937.747 557.699C938.833 559.387 940.114 560.959 941.58 562.38C943.046 563.811 944.706 565.081 946.533 566.165C959.134 573.635 975.373 569.416 982.8 556.731L1010.75 509.001C1020.56 492.247 1033.07 480.699 1053.58 477.226L1033.57 442.99ZM1007.51 507.091L979.559 554.821C975.497 561.767 967.982 566.085 959.956 566.085C952.397 566.129 944.962 562.07 940.9 555.647C940.22 554.581 924.157 527.043 923.036 525.124C940.096 520.896 952.635 510.698 963.214 492.629L991.162 444.908C995.224 437.953 1002.74 433.635 1010.77 433.635C1018.69 433.573 1026.45 438.086 1030.39 444.997L1047.69 474.596C1030.63 478.816 1018.09 489.023 1007.51 507.091Z"
-                    fill="url(#paint40_linear_479_4983)"
+                    fill="url(#paint40_linear_479_5157)"
                 />
             </g>
             <defs>
                 <filter
-                    id="filter0_f_479_4983"
+                    id="filter0_f_479_5157"
                     x={460}
                     y={0}
                     width={1000}
@@ -407,110 +472,110 @@ const SVGBgPattern = () => {
                     />
                     <feGaussianBlur
                         stdDeviation={125}
-                        result="effect1_foregroundBlur_479_4983"
+                        result="effect1_foregroundBlur_479_5157"
                     />
                 </filter>
                 <radialGradient
-                    id="paint0_radial_479_4983"
+                    id="paint0_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(960 500) rotate(0.0283788) scale(960 320)"
+                    gradientTransform="translate(960 498) rotate(0.0283788) scale(960 320)"
                 >
                     <stop offset="0.198224" stopColor="white" />
                     <stop offset={1} stopColor="white" stopOpacity={0} />
                 </radialGradient>
                 <radialGradient
-                    id="paint1_radial_479_4983"
+                    id="paint1_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(1564.05 504.867) rotate(90) scale(360)"
+                    gradientTransform="translate(1564.05 502.867) rotate(90) scale(360)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint2_radial_479_4983"
+                    id="paint2_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(1564.05 504.867) rotate(90) scale(216)"
+                    gradientTransform="translate(1564.05 502.867) rotate(90) scale(216)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint3_radial_479_4983"
+                    id="paint3_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(356 504.867) rotate(90) scale(360)"
+                    gradientTransform="translate(356 502.867) rotate(90) scale(360)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint4_radial_479_4983"
+                    id="paint4_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(356 504.867) rotate(90) scale(216)"
+                    gradientTransform="translate(356 502.867) rotate(90) scale(216)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint5_radial_479_4983"
+                    id="paint5_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(960 500) rotate(90) scale(650)"
+                    gradientTransform="translate(960 498) rotate(90) scale(650)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint6_radial_479_4983"
+                    id="paint6_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(959.999 500) rotate(90) scale(390)"
+                    gradientTransform="translate(959.999 498) rotate(90) scale(390)"
                 >
                     <stop offset="0.498224" stopColor="#00E9C6" stopOpacity="0.1" />
                     <stop offset={1} stopColor="#00DCBB" />
                 </radialGradient>
                 <radialGradient
-                    id="paint7_radial_479_4983"
+                    id="paint7_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(960 500) rotate(90) scale(178 700)"
+                    gradientTransform="translate(960 498) rotate(90) scale(178 700)"
                 >
                     <stop stopColor="#00DCBB" />
                     <stop offset={1} stopColor="#00E9C6" stopOpacity="0.1" />
                 </radialGradient>
                 <radialGradient
-                    id="paint8_radial_479_4983"
+                    id="paint8_radial_479_5157"
                     cx={0}
                     cy={0}
                     r={1}
                     gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(959.275 500.011) scale(700.729 466097)"
+                    gradientTransform="translate(959.275 498.011) scale(700.729 466097)"
                 >
                     <stop stopColor="#00DCBB" />
                     <stop offset={1} stopColor="#00E9C6" stopOpacity="0.1" />
                 </radialGradient>
                 <linearGradient
-                    id="paint9_linear_479_4983"
+                    id="paint9_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -521,7 +586,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint10_linear_479_4983"
+                    id="paint10_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -532,7 +597,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint11_linear_479_4983"
+                    id="paint11_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -543,7 +608,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint12_linear_479_4983"
+                    id="paint12_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -554,7 +619,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint13_linear_479_4983"
+                    id="paint13_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -565,7 +630,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint14_linear_479_4983"
+                    id="paint14_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -576,7 +641,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint15_linear_479_4983"
+                    id="paint15_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -587,7 +652,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint16_linear_479_4983"
+                    id="paint16_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -598,7 +663,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint17_linear_479_4983"
+                    id="paint17_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -609,7 +674,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint18_linear_479_4983"
+                    id="paint18_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -620,7 +685,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint19_linear_479_4983"
+                    id="paint19_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -631,7 +696,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint20_linear_479_4983"
+                    id="paint20_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -642,7 +707,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint21_linear_479_4983"
+                    id="paint21_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -653,7 +718,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint22_linear_479_4983"
+                    id="paint22_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -664,7 +729,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint23_linear_479_4983"
+                    id="paint23_linear_479_5157"
                     x1={660}
                     y1={475}
                     x2="1176.55"
@@ -675,7 +740,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint24_linear_479_4983"
+                    id="paint24_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -686,7 +751,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint25_linear_479_4983"
+                    id="paint25_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -697,7 +762,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint26_linear_479_4983"
+                    id="paint26_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -708,7 +773,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint27_linear_479_4983"
+                    id="paint27_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -719,7 +784,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint28_linear_479_4983"
+                    id="paint28_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -730,7 +795,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint29_linear_479_4983"
+                    id="paint29_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -741,7 +806,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint30_linear_479_4983"
+                    id="paint30_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -752,7 +817,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint31_linear_479_4983"
+                    id="paint31_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -763,7 +828,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint32_linear_479_4983"
+                    id="paint32_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -774,7 +839,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint33_linear_479_4983"
+                    id="paint33_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -785,7 +850,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint34_linear_479_4983"
+                    id="paint34_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -796,7 +861,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint35_linear_479_4983"
+                    id="paint35_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -807,7 +872,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint36_linear_479_4983"
+                    id="paint36_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -818,7 +883,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint37_linear_479_4983"
+                    id="paint37_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -829,7 +894,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint38_linear_479_4983"
+                    id="paint38_linear_479_5157"
                     x1={1260}
                     y1={525}
                     x2="743.448"
@@ -840,7 +905,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#00DCBB" />
                 </linearGradient>
                 <linearGradient
-                    id="paint39_linear_479_4983"
+                    id="paint39_linear_479_5157"
                     x1={832}
                     y1={570}
                     x2="1023.11"
@@ -852,7 +917,7 @@ const SVGBgPattern = () => {
                     <stop offset={1} stopColor="#5AE9D5" />
                 </linearGradient>
                 <linearGradient
-                    id="paint40_linear_479_4983"
+                    id="paint40_linear_479_5157"
                     x1="831.971"
                     y1="569.86"
                     x2="1024.12"
@@ -863,15 +928,15 @@ const SVGBgPattern = () => {
                     <stop offset="0.5" stopColor="#89C5FA" />
                     <stop offset={1} stopColor="#83F5F0" />
                 </linearGradient>
-                <clipPath id="clip0_479_4983">
+                <clipPath id="clip0_479_5157">
                     <rect
                         width={1920}
                         height={640}
                         fill="white"
-                        transform="translate(0 180)"
+                        transform="translate(0 178)"
                     />
                 </clipPath>
-                <clipPath id="clip1_479_4983">
+                <clipPath id="clip1_479_5157">
                     <rect
                         width={256}
                         height={140}
@@ -881,6 +946,5 @@ const SVGBgPattern = () => {
                 </clipPath>
             </defs>
         </svg>
-
     )
 }
