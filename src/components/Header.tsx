@@ -32,7 +32,7 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-10">
-          <Link to="/" className="h5">
+          <Link to="/about" className="h5">
             Über Uns
           </Link>
           <Link to="/innovationen" className="h5">
@@ -113,7 +113,7 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="flex flex-col items-center gap-10">
-            <Link to="/" className="h4">
+            <Link to="/about" className="h4">
               Über Uns
             </Link>
             <Link to="/innovationen" className="h4">

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button/Button"
-import heroImage from "@/assets/hero/hero.png"
-import heroDarkImage from "@/assets/hero/hero-dark.png"
+import heroImage from "@/assets/hero/home-hero.png"
+import heroDarkImage from "@/assets/hero/home-hero-dark.png"
 import { Spotlight } from "@/components/ui/spotlight"
 import { useTheme } from "@/contexts/ThemeContext"
 

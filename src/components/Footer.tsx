@@ -29,7 +29,7 @@ const Footer = () => {
                     <h4 className="text-[#949699]">Navigation</h4>
 
                     <div className="flex flex-col items-center lg:items-stretch gap-2">
-                        <Link to="/" className="h5">
+                        <Link to="/about" className="h5">
                             Über Uns
                         </Link>
                         <Link to="/innovationen" className="h5">

@@ -3,22 +3,24 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  /* Configure theme variables */
-  --font-display: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  /* Design system variables */
-  --primary-1: #00DCBB;
-  --primary-2: #0096ED;
-  --primary-3: #794DE3;
-  --gray: #EBEBEB;
-  --shade-1: #6D6E71;
-  --shade-2: #949699;
-  --shade-3: #E6E7E8;
-
+:root {
   --gradient-1: linear-gradient(252.44deg, #0096ED 0%, #00DCBB 100%);
   --gradient-2: linear-gradient(246.04deg, #20065F 0%, #7D57D9 100%);
   --gradient-3: linear-gradient(252.44deg, #2B1D56 0%, #0E080A 100%);
+}
+
+@theme {
+  /* Configure theme variables */
+  --font-sans: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Design system variables */
+  --color-primary-1: #00DCBB;
+  --color-primary-2: #0096ED;
+  --color-primary-3: #794DE3;
+  --color-gray: #EBEBEB;
+  --color-shade-1: #6D6E71;
+  --color-shade-2: #949699;
+  --color-shade-3: #E6E7E8;
 }
 
 @layer base {
@@ -110,6 +112,15 @@
   background-clip: text;
 }
 
+@media (min-width: 64rem) {
+  .lg\:text-gradient {
+    background: var(--gradient-1) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+}
+
 .text-gradient-2 {
   background: var(--gradient-2);
   -webkit-background-clip: text;
@@ -132,27 +143,27 @@
 }
 
 .text-primary {
-  color: var(--primary-1);
+  color: var(--color-primary-1);
 }
 
 .bg-primary {
-  background-color: var(--primary-1);
+  background-color: var(--color-primary-1);
 }
 
 .text-primary-2 {
-  color: var(--primary-2);
+  color: var(--color-primary-2);
 }
 
 .bg-primary-2 {
-  background-color: var(--primary-2);
+  background-color: var(--color-primary-2);
 }
 
 .text-primary-3 {
-  color: var(--primary-3);
+  color: var(--color-primary-3);
 }
 
 .bg-primary-3 {
-  background-color: var(--primary-3);
+  background-color: var(--color-primary-3);
 }
 
 /* Typography styles based on design system */
@@ -162,6 +173,10 @@
   font-size: 6rem;
   line-height: 110%;
   letter-spacing: -2%;
+}
+
+strong {
+  font-weight: 600;
 }
 
 /* Web Headings */
@@ -192,6 +207,18 @@ h3 {
   font-weight: 600;
 
   overflow: visible;
+}
+
+@media (min-width: 64rem) {
+  .lg\:h3 {
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 114%;
+    /* 46px */
+    font-weight: 600;
+
+    overflow: visible;
+  }
 }
 
 .h4,
@@ -235,27 +262,27 @@ span {
 }
 
 /* Mobile responsive typography */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
   .h1,
   h1 {
     font-size: 3rem;
     /* 48px */
-    line-height: 110%;
+    line-height: 115%;
   }
 
   .h2,
   h2 {
     font-size: 2.5rem;
     /* 40px */
-    line-height: 110%;
+    line-height: 115%;
   }
 
   .h3,
   h3 {
     font-size: 2rem;
     /* 32px */
-    line-height: 110%;
+    line-height: 115%;
   }
 
   .h4,
