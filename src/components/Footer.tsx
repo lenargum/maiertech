@@ -5,13 +5,21 @@ import { Input } from "./ui/Input";
 import { useTheme } from "@/contexts/ThemeContext";
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <footer className="pt-30 flex flex-col gap-10 lg:gap-8 border-t border-[#E6E7E8] dark:border-[#1A1A1A] relative" style={{ zIndex: 1 }}>
             <LogomarkBgPattern />
             <div className="container mx-auto flex lg:flex-row flex-col justify-between lg:items-start items-center gap-15">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col items-center lg:items-stretch gap-4">
-                        <Link to="/" className="flex items-center">
+                        <Link to="/" className="flex items-center" onClick={scrollToTop}>
                             <HeaderLogo className="h-[60px] lg:h-[41px]" />
                         </Link>
                         <span className="text-gradient text-[1.375rem]! lg:text-[0.875rem]! leading-[1.1]! font-semibold! tracking-normal!">Energy Meets Intelligence</span>
@@ -29,19 +37,19 @@ const Footer = () => {
                     <h4 className="text-[#949699]">Navigation</h4>
 
                     <div className="flex flex-col items-center lg:items-stretch gap-2">
-                        <Link to="/about" className="h5">
+                        <Link to="/about" onClick={scrollToTop} className="h5">
                             Über Uns
                         </Link>
-                        <Link to="/innovationen" className="h5">
+                        <Link to="/innovationen" onClick={scrollToTop} className="h5">
                             Innovationen
                         </Link>
-                        <Link to="/solutions" className="h5">
+                        <Link to="/solutions" onClick={scrollToTop} className="h5">
                             Solutions
                         </Link>
-                        <Link to="/energy" className="h5">
+                        <Link to="/energy" onClick={scrollToTop} className="h5">
                             Energy
                         </Link>
-                        <Link to="/contact" className="h5">
+                        <Link to="/contact" onClick={scrollToTop} className="h5">
                             Kontakt
                         </Link>
                     </div>
