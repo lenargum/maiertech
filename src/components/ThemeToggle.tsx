@@ -20,7 +20,7 @@ const ThemeToggle:React.FC<{variant?: 'desktop' | 'mobile'}> = ({variant = 'desk
         <IconLightMode isGradientColor={!darkMode} variant={variant} />
       </button>
 
-      <div className="w-px h-4 rounded bg-[#E6E7E8] dark:bg-[#1A1A1A]" />
+      <div className="w-0.5 h-4 rounded bg-[#E6E7E8] dark:bg-[#1A1A1A]" />
 
       <button
         onClick={(e) => {

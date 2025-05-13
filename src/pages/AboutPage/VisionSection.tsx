@@ -1,3 +1,4 @@
+import { useTheme } from '@/contexts/ThemeContext';
 import React from 'react';
 
 const VisionSection: React.FC = () => {
@@ -208,6 +209,8 @@ const SvgIcon2 = () => {
 }
 
 const SVGBgPattern = () => {
+    const { darkMode } = useTheme()
+
     return (
         <svg
             viewBox="280 200 1360 600"
@@ -251,7 +254,7 @@ const SVGBgPattern = () => {
                 </g>
             </g>
             <g filter="url(#filter0_f_479_4983)">
-                <circle cx={960} cy={500} r={250} fill="white" />
+                <circle cx={960} cy={500} r={250} fill={darkMode ? "black" : "white"} />
             </g>
             <path
                 d="M1200.55 474.927L1257.58 463.247C1259.22 462.912 1260.27 461.314 1259.94 459.677L1259.51 457.602C1259.18 455.965 1257.58 454.91 1255.95 455.245L1198.92 466.925C1197.28 467.26 1196.23 468.858 1196.56 470.495L1196.99 472.57C1197.32 474.206 1198.92 475.262 1200.55 474.927Z"
