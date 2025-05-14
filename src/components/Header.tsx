@@ -21,30 +21,37 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
   return (
     <header className="max-w-[100vw] lg:container lg:mx-auto fixed top-0 left-0 right-0 z-50 p-4 lg:p-0 lg:pt-5">
       <HoverBorderGradient containerClassName="rounded-full w-full" className="flex justify-between items-center gap-8 py-2.5 px-5 lg:p-5 lg:pl-8 dark:border-[#1A1A1A] h-15 lg:h-20 bg-white dark:bg-black backdrop-blur-[10px]">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={scrollToTop}>
             <HeaderLogo className="h-[28px] lg:h-[41px]" />
           </Link>
         </div>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-10">
-          <Link to="/about" className="h5">
+          <Link to="/about" className="h5" onClick={scrollToTop}>
             Über Uns
           </Link>
-          <Link to="/innovationen" className="h5">
+          <Link to="/innovationen" className="h5" onClick={scrollToTop}>
             Innovationen
           </Link>
-          <Link to="/solutions" className="h5">
+          <Link to="/solutions" className="h5" onClick={scrollToTop}>
             Solutions
           </Link>
-          <Link to="/energy" className="h5">
+          <Link to="/energy" className="h5" onClick={scrollToTop}>
             Energy
           </Link>
-          <Link to="/contact" className="h5">
+          <Link to="/contact" className="h5" onClick={scrollToTop}>
             Kontakt
           </Link>
         </nav>
@@ -99,7 +106,7 @@ const Header = () => {
         >
           <div className="flex items-center justify-between w-full py-[calc(6px)] px-[calc(0.25rem+2px)]">
             <div className="flex items-center">
-              <Link to="/" className="flex items-center">
+              <Link to="/" className="flex items-center" onClick={scrollToTop}>
                 <HeaderLogo className="h-[28px] lg:h-[41px]" />
               </Link>
             </div>
@@ -113,19 +120,19 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="flex flex-col items-center gap-10">
-            <Link to="/about" className="h4">
+            <Link to="/about" className="h4" onClick={scrollToTop}>
               Über Uns
             </Link>
-            <Link to="/innovationen" className="h4">
+            <Link to="/innovationen" className="h4" onClick={scrollToTop}>
               Innovationen
             </Link>
-            <Link to="/solutions" className="h4">
+            <Link to="/solutions" className="h4" onClick={scrollToTop}>
               Solutions
             </Link>
-            <Link to="/energy" className="h4">
+            <Link to="/energy" className="h4" onClick={scrollToTop}>
               Energy
             </Link>
-            <Link to="/contact" className="h4">
+            <Link to="/contact" className="h4" onClick={scrollToTop}>
               Kontakt
             </Link>
           </nav>

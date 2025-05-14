@@ -44,7 +44,7 @@ export const CardSpotlight = ({
       style={{...props.style}}
     >
       <motion.div
-        className={`absolute z-0 -inset-px rounded-md opacity-0 transition duration-300 group-hover/spotlight:opacity-100`}
+        className={`absolute -z-1 -inset-px rounded-md opacity-0 transition duration-300 group-hover/spotlight:opacity-100`}
         style={{
           maskImage: useMotionTemplate`
             radial-gradient(
