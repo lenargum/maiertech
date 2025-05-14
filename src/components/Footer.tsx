@@ -57,7 +57,7 @@ const Footer = () => {
 
                 <div className="w-full md:w-[342px] flex flex-col p-8 rounded-4xl bg-white/10 dark:bg-black/10 dark:border-1 dark:border-[#1A1A1A]" style={{ backdropFilter: "blur(8px)", boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.05), 0px 40px 60px rgba(0, 0, 0, 0.05)" }}>
                     <h4 className="mb-3 self-center">Kontakt Aufnehmen</h4>
-                    <Input className="mb-2.5" placeholder="Ihr e-mail" />
+                    <Input className="mb-2.5 text-center" placeholder="Ihr e-mail" />
                     <Button variant="filled">Abonnieren</Button>
                 </div>
             </div>
