@@ -1,10 +1,68 @@
 import { motion } from "motion/react";
 import { GlowingEffect } from '@/components/ui/glowing-effect';
 import { Button } from '@/components/ui/Button';
-
+import { useTheme } from '@/contexts/ThemeContext';
 import innovationen from "@/assets/business-areas/innovationen.png";
 import solutions from "@/assets/business-areas/solutions.png";
 import energy from "@/assets/business-areas/energy.png";
+
+import innovationenDark from "@/assets/business-areas/innovationen-dark.png";
+import solutionsDark from "@/assets/business-areas/solutions-dark.png";
+import energyDark from "@/assets/business-areas/energy-dark.png";
+
+
+
+export const BusinessAreasGrid = () => {
+  const {darkMode} = useTheme();
+
+  const businessAreas: BusinessAreaProps[] = [
+    {
+      title: "Innovationen",
+      subtitle: "Die Zukunft der Energie entwickeln",
+      description: "Technologie treibt nachhaltige Veränderungen. Wir forschen und entwickeln smarte Solar — und Netztechnologien, um Effizienz, Langlebigkeit und Wirtschaftlichkeit zu maximieren.",
+      imageSrc: darkMode ? innovationenDark : innovationen,
+      link: "/innovationen",
+    },
+    {
+      title: "Solutions",
+      subtitle: "Intelligente Energiesysteme",
+      description: "Von Photovoltaik-Anlagen bis zu Smart Grids — wir gestalten, optimieren und realisieren schlüsselfertige Systeme für Unternehmen, Städte & Industrie.",
+      imageSrc: darkMode ? solutionsDark : solutions,
+      link: "/solutions",
+    },
+    {
+      title: "Energy",
+      subtitle: "Projekte & Vermarktung",
+      description: "Energieprojekte erfordern Strategie. Wir entwickeln, finanzieren und optimieren nachhaltige Anlagen — von der Planung bis zur Netzanbindung.",
+      imageSrc: darkMode ? energyDark : energy,
+      link: "/energy",
+    }
+  ];
+
+  return (
+    <section className="py-20 lg:py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-10 items-center justify-center"
+      >
+        <h2 className="text-gradient-2">Unsere Geschäftsbereiche</h2>
+        <span className="">
+          Innovation, intelligente Lösungen & nachhaltige Energieprojekte —
+          <br />
+          Maiertech vereint technologische Exzellenz mit praxisnaher Umsetzung.
+        </span>
+      </motion.div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3  gap-2.5 drop-shadow-double-gray max-w-[1400px]">
+        {businessAreas.map((area) => (
+          <BusinessAreaCard key={area.title} area={area} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 interface BusinessAreaProps {
   title: string;
@@ -14,29 +72,7 @@ interface BusinessAreaProps {
   link: string;
 }
 
-const businessAreas: BusinessAreaProps[] = [
-  {
-    title: "Innovationen",
-    subtitle: "Die Zukunft der Energie entwickeln",
-    description: "Technologie treibt nachhaltige Veränderungen. Wir forschen und entwickeln smarte Solar — und Netztechnologien, um Effizienz, Langlebigkeit und Wirtschaftlichkeit zu maximieren.",
-    imageSrc: innovationen,
-    link: "/innovationen",
-  },
-  {
-    title: "Solutions",
-    subtitle: "Intelligente Energiesysteme",
-    description: "Von Photovoltaik-Anlagen bis zu Smart Grids — wir gestalten, optimieren und realisieren schlüsselfertige Systeme für Unternehmen, Städte & Industrie.",
-    imageSrc: solutions,
-    link: "/solutions",
-  },
-  {
-    title: "Energy",
-    subtitle: "Projekte & Vermarktung",
-    description: "Energieprojekte erfordern Strategie. Wir entwickeln, finanzieren und optimieren nachhaltige Anlagen — von der Planung bis zur Netzanbindung.",
-    imageSrc: energy,
-    link: "/energy",
-  }
-];
+
 
 const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
   return (
@@ -70,29 +106,3 @@ const BusinessAreaCard = ({ area }: { area: BusinessAreaProps }) => {
     </div>
   );
 };
-
-export const BusinessAreasGrid = () => {
-  return (
-    <section className="py-20 lg:py-32 container mx-auto flex flex-col gap-16 items-center justify-center text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="flex flex-col gap-10 items-center justify-center"
-      >
-        <h2 className="text-gradient-2">Unsere Geschäftsbereiche</h2>
-        <span className="">
-          Innovation, intelligente Lösungen & nachhaltige Energieprojekte —
-          <br />
-          Maiertech vereint technologische Exzellenz mit praxisnaher Umsetzung.
-        </span>
-      </motion.div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3  gap-2.5 drop-shadow-double-gray max-w-[1400px]">
-        {businessAreas.map((area) => (
-          <BusinessAreaCard key={area.title} area={area} />
-        ))}
-      </div>
-    </section>
-  );
-}; 

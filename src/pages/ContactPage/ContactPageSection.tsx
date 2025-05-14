@@ -5,11 +5,13 @@ import { CardSpotlight } from "@/components/ui/CardSpotlight"
 import { useTheme } from "@/contexts/ThemeContext"
 import ContactSectionBgPattern from "@/components/svg-patterns/ContactSectionBgPattern"
 import ContactSectionRotatedBgPattern from "@/components/svg-patterns/ContactSectionRotatedBgPattern"
-export const ContactPageSection = () => {
+
+
+export const ContactPageSection: React.FC<{ insideOtherPage?: boolean }> = ({ insideOtherPage = false }) => {
     const { darkMode } = useTheme();
 
     return (
-        <section className="py-30 lg:pb-30 lg:pt-50 relative flex flex-col items-center gap-15" style={{ zIndex: 1 }}>
+        <section className={` relative flex flex-col items-center gap-15 ${insideOtherPage ? "py-20 lg:pb-64" : "py-30 lg:pb-30 lg:pt-50"}`} style={{ zIndex: 1 }}>
             <ContactSectionBgPattern onlyLeftHalf className="hidden lg:flex" style={{ zIndex: -1 }} />
             <ContactSectionRotatedBgPattern className="block lg:hidden" style={{ zIndex: -1 }} />
             <div className="max-w-[44.5rem] flex flex-col items-center mx-auto text-center">
