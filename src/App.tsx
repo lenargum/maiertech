@@ -12,7 +12,7 @@ import { ThemeProvider } from './contexts/ThemeContext'
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
