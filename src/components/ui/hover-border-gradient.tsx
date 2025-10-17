@@ -79,14 +79,17 @@ export function HoverBorderGradient({
                 className="absolute inset-0 z-0 rounded-[inherit] overflow-hidden"
                 style={{
                     filter: "blur(2px)",
+                    // Keep mask as a static style; not part of Motion animate API
+                    maskImage:
+                        "radial-gradient(calc(100% - 2px) calc(100% - 2px) at center, transparent 100%, black 100%)",
+                    WebkitMaskImage:
+                        "radial-gradient(calc(100% - 2px) calc(100% - 2px) at center, transparent 100%, black 100%)",
                 }}
                 initial={{ background: movingMap[direction] }}
                 animate={{
                     background: hovered
                         ? [movingMap[direction], highlight]
                         : movingMap[direction],
-                    maskImage: "radial-gradient(calc(100% - 2px) calc(100% - 2px) at center, transparent 100%, black 100%)",
-                    WebkitMaskImage: "radial-gradient(calc(100% - 2px) calc(100% - 2px) at center, transparent 100%, black 100%)",
                 }}
                 transition={{ ease: "linear", duration: duration ?? 1 }}
             />
